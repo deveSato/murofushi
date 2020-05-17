@@ -2,14 +2,17 @@
 <htmllang="en">
 <head>
 	<metacharset="UTF-8">
-	<metaname="viewport"content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 	<title>Document</title>
 
 
 
 	<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
 	<link href="./css/style.css" rel="stylesheet" />
+
+	<script type="text/javascript" src="./script/script.js"></script>
 </head>
+
 
 <body>
 	<article>
@@ -19,12 +22,12 @@
 			</nav>
 		</header>
 
-		<section>
+		<section class="heroSection">
 			<div class="topImage">
-				<img src="./img/topImage.jpg" alt="トップ画像">
+				<!-- <img src="./img/topImage.jpg" alt="トップ画像"> -->
 			</div>
 		</section>
-		
+
 		<section>
 			<div class="concept">
 				<h2>raiponiaとは</h2>
@@ -58,19 +61,17 @@
 				
 			</div>
 		</section>
-		<section>
+		<section class="longSection">
 			<div>
 				<h2>IMAGES</h2>
 				<div>
-					<img src="" alt="">
+					<img src="./img/roomDesk2.jpg" alt="">
 				</div>
 			</div>
-		</section>
-		<section>
 			<div>
 				<h2>STYLES</h2>
 				<div>
-					<img src="" alt="">
+					<img src="./img/style2.png" alt="">
 				</div>
 			</div>
 		</section>
@@ -78,7 +79,7 @@
 			<div>
 				<h2>MENU/料金</h2>
 				<div>
-					<img src="" alt="">
+					<img src="./img/signSkateboard.JPG" alt="">
 				</div>
 			</div>
 		</section>
@@ -89,16 +90,17 @@
 				<div>
 					<p>ご予約は、電話またはLINEにて承っております。</p>
 					<div>
-						<address>
-							<span>03-6454-6561</span>
-						</address>
+						
+						<span class="tel">
+							<address>03-6454-6561</address>
+						</span>
 						<span>/</span>
 						<span>official Line</span>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section>
+		<section class="longSection">
 			<div>
 				<h2>SHOP INFO</h2>
 
@@ -120,33 +122,39 @@
 						</address>
 					</div>
 					<div>
-						(googlemap)
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.949851964893!2d139.65008574964665!3d35.702851649940946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f289b345fd09%3A0x14f17cd13a94dcee!2sraiponia!5e0!3m2!1sja!2sjp!4v1589678682035!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section>
-			<div>
+			<div class="stylist">
 				<h2>STYLIST</h2>
-				<div>
-					<img src="" alt="">
+				<div class="imageWrappter">
+					<img src="./img/stylist.jpg" alt="">
 				</div>
 				<div>
-					<p>
+					<p class="name">
 						<span>室伏大介</span>
 						<span>Murofushi Daisuke</span>
 					</p>
 					<p>
 						常に新しい挑戦で居心地よい空間と技術を作り上げています。一人ひとりの希望をしっかり汲みとり意表を突くようなアイデアをプラスしてその面白さを表現します。
 					</p>
-					<div>
-						<h4>Favorites</h4>
+					<div class="favorites">
+						<h6>Favorites</h6>
 						<div>
-							<ul>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
-								<li><img src="" alt=""></li>
+							<ul class="">
+								<li class="">
+									<img src="./img/sunsetSea.jpg" alt="">
+								</li>
+								<li class="">
+									<img src="./img/bike.jpg" alt="">
+								</li>
+								<li class="">
+									<img src="./img/coffee.jpg" alt="">
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -162,33 +170,37 @@
 		</section>
 
 		<footer>
-			<div>	
-				<menu>
-					<ul>
-						<li>ライポニアとは</li>
-						<li>STYLES</li>
-						<li>MENU/料金</li>
-						<li>MAP</li>
-					</ul>
-				</menu>
-			</div>
-			<div>
-				<a href="">
-					(R Under link)<img src="" alt="">
-				</a>
-			</div>
-			<div>
-				<a href="">
-					(Raiponia Creative Club link)<img src="" alt="">
-				</a>
-			</div>
+			<div class="footer">
+				<div>	
+					<menu>
+						<ul>
+							<li>ライポニアとは</li>
+							<li>STYLES</li>
+							<li>MENU/料金</li>
+							<li>MAP</li>
+						</ul>
+					</menu>
+				</div>
+				<div class="runder">
+					<a href="">
+						<img class="" src="./img/partner.png" alt="">
+					</a>
+				</div>
+				<div class="rcc">
+					<a href="">
+						<img class="" src="./img/titleRCC.png" alt="">
+					</a>
+				</div>
 
 
-			<div>
-				<p>高円寺の美容室・美容院・隠れ家ヘアサロン／RAIPONIA</p>
-			</div>
-			<div>
-				<p>Copyright(C) 2010-2020 All rights Reserved.</p>
+				<div>
+					<p class="shopInfo">高円寺の美容室・美容院・隠れ家ヘアサロン／RAIPONIA</p>
+				</div>
+				<div>
+					<p class="copyright">
+						<small>Copyright(C) 2010-2020 All rights Reserved.</small>
+					</p>
+				</div>
 			</div>
 		</footer>
 	</article>
