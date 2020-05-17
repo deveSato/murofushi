@@ -1,11 +1,10 @@
-@charset "UTF-8";
 html, body {
   height: 100%;
   width: 100%;
 }
 
 body {
-  font: 16px/1.6 "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic", Verdana, Arial, sans-serif;
+  font: 16px/1.6 "Roboto", sans-serif, "M PLUS 1p", "Noto Sans JP", sans-serif;
   margin: 0;
   color: #333;
   background-color: #f0f0f0;
@@ -22,6 +21,10 @@ section.heroSection {
 
 section.longSection {
   height: 150vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
 
 a {
@@ -75,11 +78,51 @@ iframe {
   background-size: cover;
 }
 
-.tel {
-  display: inline-block;
+.concept h2 {
+  padding-top: 25%;
+}
+
+.info .date {
+  margin: 0;
+  font-weight: bold;
+  font-family: 'M PLUS 1p (general-j) Thin';
+}
+
+.info .text {
+  margin-top: .1em;
+  margin-bottom: 1em;
+}
+
+.reservation .text {
+  font-size: .95em;
+}
+
+.telAndLine .tel {
   background-color: #888;
   color: #eee;
   padding: 1em 1.5em;
+  display: inline-block;
+}
+
+.telAndLine .line {
+  background-color: #6FCF97;
+  color: #eee;
+  padding: 1em 1.5em;
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  font-size: 105%;
+  font-weight: bold;
+}
+
+.googlemaps iframe,
+.googlemaps object,
+.googlemaps embed {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .favorites h6 {
@@ -174,5 +217,31 @@ iframe {
   left: 10em;
   bottom: 10em;
   font-size: .1em;
+}
+
+section.video {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+}
+
+section.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: url("./video/bg.png") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+section.video .bg-white {
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
