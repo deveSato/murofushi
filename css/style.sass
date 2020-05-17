@@ -1,0 +1,42 @@
+$main-color: #333
+$sub-color: #f0f0f0
+$main-font: "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif
+
+
+html, body 
+	height: 100%
+
+
+
+body
+	width: 100%
+	font: 15px/1.6 $main-font
+	margin: 0
+	color: $main-color
+	background-color: $sub-color
+
+
+section
+	height: 100%
+	width: 100%
+
+a
+	color:blue
+	-webkit-transition: all 0.5s
+	-moz-transition: all 0.5s
+	transition: all 0.5s
+	&:hover
+		color: #F5A862
+		-webkit-transition: all 0.5s
+		-moz-transition: all 0.5s
+		transition: all 0.5s
+	&:visited
+		color: #000
+	
+
+img
+	outline: none
+	border-style: none
+
+.topImage
+	background-image: url(./image/topImage.jpg);
