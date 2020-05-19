@@ -68,6 +68,46 @@ iframe {
   width: 100%;
 }
 
+.logoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+.logoWrapper .raiponiaTree {
+  width: 2.2em;
+}
+
+.logoWrapper h1.raiponia {
+  margin: 0;
+}
+
+.logoWrapper img.raiponiaLogoText {
+  width: 2.2em;
+}
+
+.lineTelWrapper {
+  position: absolute;
+  right: 7%;
+  top: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lineTelWrapper .lineLogo {
+  width: 1.8em;
+  margin-top: .5em;
+}
+
+.lineTelWrapper .telLogo {
+  width: 1.8em;
+  margin-top: .5em;
+  margin-left: 10%;
+}
+
 .m0 {
   margin: 0;
 }
@@ -91,6 +131,10 @@ iframe {
 .info .text {
   margin-top: .1em;
   margin-bottom: 1em;
+}
+
+.roomImage {
+  margin-bottom: 20%;
 }
 
 .reservation .text {
@@ -125,6 +169,44 @@ iframe {
   filter: grayscale(100%);
 }
 
+.shopinfo .heading {
+  margin: 0;
+  font-weight: bold;
+  font-family: 'M PLUS 1p (general-j) Thin';
+}
+
+.shopinfo .text {
+  margin-top: .1em;
+  margin-bottom: 1em;
+  font-size: .8em;
+}
+
+.shopinfo .text.m0 {
+  margin-bottom: 0;
+}
+
+.stylist .imageWrappter {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.stylist .name {
+  text-align: center;
+}
+
+.stylist .kanji {
+  font-size: 1.1em;
+}
+
+.stylist .alpha {
+  font-size: .8em;
+}
+
+.stylist .text {
+  font-size: .9em;
+  margin-bottom: 2.5em;
+}
+
 .favorites h6 {
   margin-bottom: 0;
 }
@@ -137,20 +219,11 @@ iframe {
 }
 
 .favorites ul li {
-  margin-left: 1em;
+  margin-left: .5em;
 }
 
 .favorites ul li:first-of-type {
   margin-left: 0;
-}
-
-.stylist .imageWrappter {
-  margin: 0 auto;
-  width: 50%;
-}
-
-.stylist .name {
-  text-align: center;
 }
 
 .footer {
@@ -161,7 +234,7 @@ iframe {
 }
 
 .footer ul {
-  padding: .5em;
+  padding: .5em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,11 +243,7 @@ iframe {
 .footer ul li {
   width: 25%;
   font-size: .5em;
-  margin-left: 1em;
-}
-
-.footer ul li:after {
-  content: "|";
+  text-align: center;
 }
 
 .footer ul li:last-of-type:after {
@@ -183,6 +252,10 @@ iframe {
 
 .footer ul li:first-of-type {
   margin-left: 0;
+}
+
+.footer ul li + li {
+  border-left: 1px solid #fff;
 }
 
 .footer .runder {
@@ -212,7 +285,7 @@ iframe {
   bottom: 4em;
 }
 
-.footer .copyright {
+.footer .copyright small {
   position: absolute;
   left: 10em;
   bottom: 10em;

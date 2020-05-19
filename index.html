@@ -13,6 +13,7 @@
 
 	<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
 	<link href="./css/style.css" rel="stylesheet" />
+	<link href="./css/header.css" rel="stylesheet" />
 
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -25,10 +26,50 @@
 <body>
 	<article>
 		<header>
-			<nav>
-				<h1>raiponia</h1> 
-			</nav>
+			<div class="l-header headerWrapper">
+				<div class="l-drawer">
+					<input class="l-drawer__checkbox" id="drawerCheckbox" type="checkbox" >
+					<!-- ハンバーガーアイコン -->
+					<label class="l-drawer__icon" for="drawerCheckbox">
+					<span class="l-drawer__icon-parts"></span>
+
+					</label>
+					<!-- 背景を暗く -->
+					<label class="l-drawer__overlay" for="drawerCheckbox"></label>
+					<div class="l-drawer__menu">
+						<nav>
+							<div>
+								<ul>
+									<li><a href="#">raiponiaとは</a></li>
+									<li><a href="#">STYELS</a></li>
+									<li><a href="#">MENU/料金</a></li>
+									<li><a href="#">MAP</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>	
+				</div>
+				<div class="logoWrapper">
+					<span>
+						<img class="raiponiaTree" src="./img/raiponiaTree.png" alt="メインロゴイラスト">
+					</span>
+					<span class="">
+						<h1 class="raiponia"> 
+							<img class="raiponiaLogoText" src="./img/mainLogoText.png" alt="メインロゴテキスト">
+						</h1>
+					</span>
+				</div>
+				<div class="lineTelWrapper">
+					<span><img class="lineLogo" src="./img/lineIcon.svg" alt="lineロゴ"></span>
+					<span><img class="telLogo" src="./img/telephoneIcon.svg" alt="telロゴ"></span>
+				</div>
+
+			</div>
+				
+		
+		
 		</header>
+
 
 		<section class="heroSection">
 			<div class="topImage">
@@ -43,11 +84,14 @@
 					都会にありながら喧騒を忘れさせるプライベートなカジュアルサロン。
 				</p>
 				<p>
-					「identity」「variation」「difference」「careful」「imagination」「creation」
+					「identity」「variation」「difference」<br>「careful」「imagination」「creation」
 				</p>
 				<p>
-					これらをすべて詰め込み、美容を通じて新しい価値を創造しお届けすることで、新たな発見や喜びを感じて頂きたい。
+					これらをすべて詰め込み、皆様のライフスタイルにより添い、
+					美容を通じて新しい価値を創造しお届けすることで、新たな発見や喜びを感じて頂きたい。
 					そんな想いでraiponiaは生まれました。
+				</p>
+				<p>
 					ぜひ一度、あなたもraiponiaワールドへ、迷い込んできてください。
 				</p>
 			</div>
@@ -70,14 +114,14 @@
 			</div>
 		</section>
 		<section class="longSection">
-			<div>
-				<h2>IMAGES</h2>
+			<div class="roomImage">
+				<h2>IMAGE</h2>
 				<div>
 					<img src="./img/roomDesk2.jpg" alt="">
 				</div>
 			</div>
 			<div>
-				<h2>STYLES</h2>
+				<h2>STYLE</h2>
 				<div>
 					<img src="./img/style2.png" alt="">
 				</div>
@@ -108,24 +152,24 @@
 			</div>
 		</section>
 		<section class="longSection">
-			<div>
+			<div class="shopinfo">
 				<h2>SHOP INFO</h2>
 
 				<div>
 					<div>
-						<p>OPEN</p>
-						<p>平日＆土曜日 10:00～21:00(カット受付PM20:00)</p>
-						<p>日曜日 10:00～20:00(カット受付PM19:00) </p>
+						<p class="heading">OPEN</p>
+						<p class="text m0">平日＆土曜日 10:00～21:00(カット受付PM20:00)</p>
+						<p class="text">日曜日 10:00～20:00(カット受付PM19:00) </p>
 					</div>
 					<div>
-						<p>CLOSE</p>
-						<p>毎週火曜日</p>
-						<p>第三月曜日＋不定休</p>
+						<p class="heading">CLOSE</p>
+						<p class="text m0">毎週火曜日</p>
+						<p class="text">第三月曜日＋不定休</p>
 					</div>
 					<div>
-						<p>ADDRESS</p>
+						<p class="heading">ADDRESS</p>
 						<address>
-							<p>東京都杉並区高円寺南２丁目５２ー１２</p>
+							<p class="text">東京都杉並区高円寺南２丁目５２ー１２</p>
 						</address>
 					</div>
 					<div class="googlemaps">
@@ -143,14 +187,14 @@
 				</div>
 				<div>
 					<p class="name">
-						<span>室伏大介</span>
-						<span>Murofushi Daisuke</span>
+						<span class="kanji">室伏 大介</span>
+						<span class="alpha">Murofushi Daisuke</span>
 					</p>
-					<p>
+					<p class="text">
 						常に新しい挑戦で居心地よい空間と技術を作り上げています。一人ひとりの希望をしっかり汲みとり意表を突くようなアイデアをプラスしてその面白さを表現します。
 					</p>
 					<div class="favorites">
-						<h6>Favorites</h6>
+						<h4 class="m0">Favorite</h4>
 						<div>
 							<ul class="">
 								<li class="">
@@ -186,7 +230,7 @@
 				<div>	
 					<menu>
 						<ul>
-							<li>ライポニアとは</li>
+							<li>raiponiaとは</li>
 							<li>STYLES</li>
 							<li>MENU/料金</li>
 							<li>MAP</li>

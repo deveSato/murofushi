@@ -4,6 +4,15 @@ $main-font: 'Roboto', sans-serif,"M PLUS 1p",'Noto Sans JP', sans-serif
 // $main-font: "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif
 $img_path: '../img/'
 
+
+// ちなみに baycrews.jpのフォントファミリー
+// Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+// "Hiragino Kaku Gothic Pro", Meiryo, sans-serif
+
+
+
+
+
 html, body 
 	height: 100%
 	width: 100%
@@ -60,6 +69,30 @@ iframe
 	// google Map 向け
 	width: 100%
 
+.logoWrapper
+	display: flex
+	margin: 0 auto
+	padding: .5em
+	.raiponiaTree
+		width: 2.2em
+	h1.raiponia
+		margin: 0
+	img.raiponiaLogoText
+		width: 2.2em
+
+.lineTelWrapper
+	position: absolute
+	right: 7%
+	top: .5em
+	display: flex
+	.lineLogo
+		width: 1.8em
+		margin-top: .5em
+	.telLogo
+		width: 1.8em
+		margin-top: .5em
+		margin-left: 10%
+
 .m0
 	margin: 0
 
@@ -81,7 +114,10 @@ iframe
 		margin-top: .1em
 		margin-bottom: 1em
 		// font-weight: 100
-		
+
+.roomImage
+	margin-bottom: 20%
+
 .reservation
 	.text
 		font-size: .95em
@@ -113,6 +149,32 @@ iframe
 	-o-filter: grayscale(100%)
 	filter: grayscale(100%)
 
+.shopinfo
+	.heading
+		margin: 0
+		font-weight: bold
+		font-family: 'M PLUS 1p (general-j) Thin'
+	.text
+		margin-top: .1em
+		margin-bottom: 1em
+		font-size: .8em
+		&.m0
+			margin-bottom: 0
+
+.stylist
+	.imageWrappter
+		margin: 0 auto
+		width: 50%
+	.name
+		text-align: center
+	.kanji
+		font-size: 1.1em
+	.alpha
+		font-size: .8em
+	.text
+		font-size: .9em
+		margin-bottom: 2.5em
+
 
 .favorites
 	h6
@@ -121,17 +183,10 @@ iframe
 		margin-top: 0
 		display: flex
 		li
-			margin-left: 1em
+			margin-left: .5em
 			&:first-of-type
 				margin-left: 0
-
-.stylist
-	.imageWrappter
-		margin: 0 auto
-		width: 50%
-	.name
-		text-align: center
-
+	
 
 .footer
 	position: relative
@@ -139,18 +194,24 @@ iframe
 	height: 75vh
 	background-color: #222
 	ul
-		padding: .5em
+		padding: .5em 1em
 		display: flex
 		li
 			width: 25%
 			font-size: .5em
-			margin-left: 1em
-			&:after
-				content: "|"
+			text-align: center
+			// margin-left: 1em
+			// &:after
+			// 	content: "|"
 			&:last-of-type:after
 				content: ""
 			&:first-of-type
 				margin-left: 0
+			&+li
+				border-left: 1px solid #fff
+				// border-spacing: 20px 100px
+				// padding-left: 10%
+		
 	.runder
 		padding: .5em 2em
 		background-color: #fff
@@ -160,7 +221,6 @@ iframe
 		img
 			height: 3em
 			width: auto
-
 	.rcc
 		padding: .2em
 		background-color: #fff
@@ -173,7 +233,7 @@ iframe
 		font-size: .5em
 		left: 2em
 		bottom: 4em
-	.copyright
+	.copyright small
 		position: absolute
 		left: 10em
 		bottom: 10em
