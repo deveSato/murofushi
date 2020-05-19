@@ -123,22 +123,21 @@ iframe
 		font-size: .95em
 
 .telAndLine
+	display: flex
+	margin: 0 auto
+	width: 90%
+	.tel,
+	.line
+		padding: 1em 1.5em
+		text-align: center
+		width: 50%
+		color: #eee
 	.tel
 		background-color: #888
-		color: #eee
-		padding: 1em 1.5em
-		display: inline-block
-		// width: 48%
 	.line
 		background-color: #6FCF97
-		color: #eee
-		padding: 1em 1.5em
-		display: inline-block
-		width: 10rem
-		text-align: center
 		font-size: 105%
-		font-weight: bold
-
+		margin-left: .5em
 
 .googlemaps iframe,
 .googlemaps object,
@@ -228,17 +227,18 @@ iframe
 		margin-left: 1em
 		img
 			// width: 17em
-	.shopInfo
-		position: absolute
-		font-size: .5em
-		left: 2em
-		bottom: 4em
-	.copyright small
-		position: absolute
-		left: 10em
-		bottom: 10em
-		font-size: .1em
 
+	.infoWrapper
+		position: absolute
+		bottom: 0
+		padding: 0 0 1em 1em
+		.shopInfo
+			margin-bottom: 0
+			font-size: .5em
+		.copyright
+			margin: 0
+			small
+				font-size: .8em
 
 
 section.video

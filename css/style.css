@@ -141,22 +141,30 @@ iframe {
   font-size: .95em;
 }
 
+.telAndLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.telAndLine .tel,
+.telAndLine .line {
+  padding: 1em 1.5em;
+  text-align: center;
+  width: 50%;
+  color: #eee;
+}
+
 .telAndLine .tel {
   background-color: #888;
-  color: #eee;
-  padding: 1em 1.5em;
-  display: inline-block;
 }
 
 .telAndLine .line {
   background-color: #6FCF97;
-  color: #eee;
-  padding: 1em 1.5em;
-  display: inline-block;
-  width: 10rem;
-  text-align: center;
   font-size: 105%;
-  font-weight: bold;
+  margin-left: .5em;
 }
 
 .googlemaps iframe,
@@ -278,18 +286,23 @@ iframe {
   margin-left: 1em;
 }
 
-.footer .shopInfo {
+.footer .infoWrapper {
   position: absolute;
-  font-size: .5em;
-  left: 2em;
-  bottom: 4em;
+  bottom: 0;
+  padding: 0 0 1em 1em;
 }
 
-.footer .copyright small {
-  position: absolute;
-  left: 10em;
-  bottom: 10em;
-  font-size: .1em;
+.footer .infoWrapper .shopInfo {
+  margin-bottom: 0;
+  font-size: .5em;
+}
+
+.footer .infoWrapper .copyright {
+  margin: 0;
+}
+
+.footer .infoWrapper .copyright small {
+  font-size: .8em;
 }
 
 section.video {
