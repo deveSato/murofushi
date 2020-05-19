@@ -29,10 +29,10 @@
 .l-drawer__icon {
   cursor: pointer;
   display: block;
-  width: 56px;
-  height: 60px;
+  width: 4em;
+  height: 4em;
   position: fixed;
-  left: 0;
+  left: .3em;
   top: 0;
 }
 
