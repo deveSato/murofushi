@@ -1,4 +1,3 @@
-/*ヘッダー*/
 .headerWrapper
 	display: flex
 
@@ -66,7 +65,7 @@
 		background: #ffffff
 		color: #000
 		max-width: 100%
-		width: 320px
+		//width: 320px
 		height: 40vh
 		overflow-y: auto //スクロール
 		-webkit-overflow-scrolling: touch //スクロール（SP）
@@ -89,18 +88,19 @@
 	&__checkbox:checked ~
 		// ハンバーガーアイコン
 		.l-drawer__icon
-		.l-drawer__icon-parts
-			background: transparent
-		.l-drawer__icon-parts:before
-			-webkit-transform: rotate(-45deg)
-			transform: rotate(-45deg)
-			top: 0
-		.l-drawer__icon-parts:after
-			-webkit-transform: rotate(45deg)
-			transform: rotate(45deg)
-			top: 0
+			.l-drawer__icon-parts
+				background: transparent
+			.l-drawer__icon-parts:before
+				-webkit-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+				top: 0
+			.l-drawer__icon-parts:after
+				-webkit-transform: rotate(45deg)
+				transform: rotate(45deg)
+				top: 0
 		// メインエリアを暗くする
-		.l-drawer__overlay 
+		.l-drawer__overlay
+			margin-top: 4em
 			opacity: 0.3
 			pointer-events: auto //ポインタの動作デフォルトに戻す
 		// メニューをだす
@@ -115,5 +115,13 @@
 	&__menu
 		-webkit-transition: all .7s 
 		transition: all .7s 
-
-
+	
+//　動き系以外の見た目の整備	
+.l-drawer__menu
+	.ulArea
+		padding: .5em 2em
+		line-height: 2em
+		font-size: 1.3em
+		a
+			color: #000
+	
