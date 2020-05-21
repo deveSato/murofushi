@@ -66,6 +66,20 @@ iframe {
   width: 100%;
 }
 
+.scrollToTopArea {
+  position: fixed;
+  width: 2em;
+  height: 2em;
+  bottom: 2em;
+  right: 2em;
+  z-index: 1;
+}
+
+.scrollToTopArea .js-smooth-scroll {
+  width: 3em;
+  height: 3em;
+}
+
 .logoWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
