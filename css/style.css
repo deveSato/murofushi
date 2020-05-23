@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font: 16px/1.6 "Roboto", sans-serif, "Noto Sans JP", sans-serif;
+  font: 16px/1.6 "M PLUS 1p", sans-serif, "Roboto", sans-serif;
   margin: 0;
   color: #333;
   background-color: #f0f0f0;
@@ -238,6 +238,7 @@ iframe {
 .shopinfo .heading {
   margin: 0;
   font-weight: bold;
+  font-family: 'M PLUS 1p';
 }
 
 .shopinfo .text {
