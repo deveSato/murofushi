@@ -146,6 +146,7 @@ iframe {
 
 .info .date {
   margin: 0;
+  font-weight: bold;
 }
 
 .info .text {
