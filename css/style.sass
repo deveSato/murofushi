@@ -81,7 +81,20 @@ iframe
 	.js-smooth-scroll
 		width: 3em
 		height: 3em
-		// background: green
+		#toTop
+			// background: green
+			opacity: 0
+			visibility: hidden//デフォルトは隠しとく、
+			// transform: translateY(40px)
+			transition: all 1s
+			&.isShown
+				// isShownクラスが付与されたときだけ見せる
+				opacity: 1
+				visibility: visible
+				// transform: translateY(0px)
+
+
+
 
 
 .logoWrapper
@@ -130,6 +143,25 @@ iframe
 
 .roomImage
 	margin-bottom: 20%
+
+.menuWrapper
+	.menuAndPrice
+		width: 60%
+		margin: 0 auto
+		li
+			display: flex
+			justify-content: space-between
+			.price:after
+				color: transparent
+				content: "~"
+			.price.nyoro:after
+				color: $main-color
+	.moreInfoWrapper
+		display: flex
+		justify-content: flex-end
+		.moreInfo
+			background: #888
+			padding: .5em
 
 .reservation
 	.text
@@ -267,7 +299,7 @@ section.video
 		height: auto
 		// min-width: 100%
 		// min-height: 100%
-		background: url('./video/bg.png') no-repeat
+		background: url('../video/videobg.png') no-repeat
 		background-size: cover
 		z-index: -1;   
 	.bg-white

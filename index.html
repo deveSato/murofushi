@@ -1,5 +1,5 @@
-<!DOCTYPEhtml>
-<htmllang="en">
+<!DOCTYPE>
+<html lang="en">
 <head>
 	<metacharset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -42,7 +42,7 @@
 								<ul>
 									<li><a href="#">raiponiaとは</a></li>
 									<li><a href="#">STYLE</a></li>
-									<li><a href="#">MENU/料金</a></li>
+									<li><a href="#">MENU/PRICE</a></li>
 									<li><a href="#">MAP</a></li>
 								</ul>
 							</div>
@@ -79,12 +79,13 @@
 
 		<div class="scrollToTopArea">
 			<div class="js-smooth-scroll">
-				<img class="js-smooth-scroll" src="./img/ArrowUp.svg" alt="上へボタン">
+				<img id="toTop" class="js-smooth-scroll" src="./img/ArrowUp.svg" alt="上へボタン">
 			</div>
 		</div>
 
-		<section class="heroSection">
-			<div class="topImage">
+		<section id="topImage" class="heroSection">
+			<div id="dummyTop"></div>
+			<div  class="topImage">
 				<!-- <img src="./img/topImage.jpg" alt="トップ画像"> -->
 			</div>
 		</section>
@@ -135,15 +136,48 @@
 			<div>
 				<h2>STYLE</h2>
 				<div>
-					<img src="./img/style2.png" alt="">
+					<img src="./img/style4.jpg" alt="">
 				</div>
 			</div>
 		</section>
 		<section>
 			<div>
-				<h2>MENU/料金</h2>
+				<h2>MENU/PRICE</h2>
 				<div>
 					<img src="./img/signSkateboard.JPG" alt="">
+				</div>
+				<div class="menuWrapper">
+					<div class="menuAndPrice">
+						<ul>
+							<li>
+								<span>cut</span>
+								<span class="price">4,500</span>
+							</li>
+							<li>
+								<span>color</span>
+								<span class="price nyoro">5,000</span>
+							</li>
+							<li>
+								<span>wave&curl</span>
+								<span class="price nyoro">6,000</span>
+							</li>
+							<li>
+								<span>superstraight</span>
+								<span class="price">15,000</span>
+							</li>
+							<li>
+								<span>treatment</span>
+								<span class="price nyoro">3,000</span>
+							</li>
+							<li>
+								<span>spa</span>
+								<span class="price">4,500</span>
+							</li>
+						</ul>
+					</div>
+					<a class="moreInfoWrapper" href="">
+						<span class="moreInfo">more info</span>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -233,12 +267,12 @@
 		<section class="video">
 			<div>
 				<video playsinline autoplay muted loop>
-					<source src="./video/pv.mp4" type="video/mp4">
+					<source src="./video/pvShort.mp4" type="video/mp4">
 				</video>
-				<!-- <div class="bg-white">
+				<div class="bg-white">
 					<h2>Headline</h2>
 					<p>Example text... Example text... Example text... </p>
-				</div> -->
+				</div>
 			</div>
 		</section>
 
@@ -248,8 +282,8 @@
 					<menu>
 						<ul>
 							<li>raiponiaとは</li>
-							<li>STYLES</li>
-							<li>MENU/料金</li>
+							<li>STYLE</li>
+							<li>MENU/PRICE</li>
 							<li>MAP</li>
 						</ul>
 					</menu>
@@ -275,6 +309,8 @@
 			</div>
 		</footer>
 	</article>
+	<script type="text/javascript" src="./script/intersection.js"> </script>
+
 </body>
 
 </html>
