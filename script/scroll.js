@@ -13,7 +13,7 @@ document.addEventListener("click", e => {
 	// 	behavior: "smooth",
 	// 	block: "start"
 	// });
-	document.getElementsByClassName("heroSection")[0].scrollIntoView({
+	document.getElementById("topImage").scrollIntoView({
 		behavior: "smooth",
 		block: "start"
 	});
