@@ -25,6 +25,7 @@ section.longSection {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
   font-weight: 300;
 }
 
@@ -147,12 +148,14 @@ iframe {
 
 .info .date {
   margin: 0;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'M PLUS 1p';
 }
 
 .info .text {
   margin-top: .1em;
   margin-bottom: 1em;
+  font-weight: 300;
 }
 
 .roomImage {
