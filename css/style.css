@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  font: 16px/1.6 "Roboto", sans-serif, "Hiragino Kaku Gothic Pro", "メイリオ", "M PLUS 1p";
+  font: 16px/1.6 "Roboto", sans-serif, "Hiragino Kaku Gothic Pro", "メイリオ", 　Meiryo, "M PLUS 1p";
   margin: 0;
   color: #333;
   background-color: #f0f0f0;
