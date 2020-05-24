@@ -25,7 +25,11 @@ section.heroSection {
 }
 
 section.longSection {
-  height: 150vh;
+  height: 160vh;
+}
+
+section.menuAndPriceSection {
+  margin-top: 10em;
 }
 
 h1, h2, h3, h4, h5, h6 {

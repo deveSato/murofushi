@@ -1,12 +1,15 @@
 .imageFaderWrapper {
   position: relative;
   max-width: 100%;
-  height: 50%;
   margin: auto;
   overflow: hidden;
 }
 
-.imageFaderWrapper .bgImg {
+.imageFaderWrapper.style {
+  height: 50%;
+}
+
+.imageFaderWrapper.style .bgImg {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,29 +18,72 @@
   opacity: 0;
   -webkit-animation: bgAnime 20s infinite;
           animation: bgAnime 20s infinite;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.imageFaderWrapper .bgImg.src1 {
+.imageFaderWrapper.style .bgImg.src1 {
   background-image: url(../img/style1.jpg);
 }
 
-.imageFaderWrapper .bgImg.src2 {
+.imageFaderWrapper.style .bgImg.src2 {
   background-image: url(../img/style2.jpg);
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
 
-.imageFaderWrapper .bgImg.src3 {
+.imageFaderWrapper.style .bgImg.src3 {
   background-image: url(../img/style3.jpg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
 
-.imageFaderWrapper .bgImg.src4 {
+.imageFaderWrapper.style .bgImg.src4 {
   background-image: url(../img/style4.jpg);
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
+}
+
+.imageFaderWrapper.image {
+  height: 50vh;
+}
+
+.imageFaderWrapper.image .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-animation: bgAnime 16s infinite;
+          animation: bgAnime 16s infinite;
+  background-size: contain;
+}
+
+.imageFaderWrapper.image .bgImg.src1 {
+  background-image: url(../img/roomSoap.jpg);
+  background-repeat: no-repeat;
+}
+
+.imageFaderWrapper.image .bgImg.src2 {
+  background-image: url(../img/roomCampChair.jpg);
+  background-repeat: no-repeat;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.imageFaderWrapper.image .bgImg.src3 {
+  background-image: url(../img/roomAudio1.jpg);
+  background-repeat: no-repeat;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.imageFaderWrapper.image .bgImg.src4 {
+  background-image: url(../img/roomAll.jpg);
+  background-repeat: no-repeat;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 
 @-webkit-keyframes bgAnime {
