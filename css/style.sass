@@ -78,6 +78,10 @@ iframe
 	// google Map 向け
 	width: 100%
 
+.w90c
+	margin: 0 auto
+	width: 90%
+
 .scrollToTopArea
 	position: fixed
 	width: 2em
@@ -106,14 +110,15 @@ iframe
 
 .logoWrapper
 	display: flex
+	align-items: center
 	margin: 0 auto
 	padding: .5em
 	.raiponiaTree
-		width: 2.2em
-	h1.raiponia
-		margin: 0
-	img.raiponiaLogoText
-		width: 2.2em
+		width: 3em
+		// h1.raiponia
+		// 	margin: 0
+		// img.raiponiaLogoText
+		// 	width: 2.2em
 
 .lineTelWrapper
 	position: absolute
@@ -311,17 +316,15 @@ section.video
 	height: 65vh
 	position: relative
 	overflow: hidden
-	video
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: auto
-		// min-width: 100%
-		// min-height: 100%
-		background: url('../video/videobg.png') no-repeat
-		background-size: cover
-		z-index: -1;   
+	.videoWrapper
+		margin-top: 7em
+		video
+			width: 100%
+			height: auto
+			background: url(../video/videobg.png) no-repeat
+			background-size: cover
+			z-index: -1
+			margin: 0 auto			
 	.bg-white
 		background: rgba(255, 255, 255, .75)
 		position: absolute

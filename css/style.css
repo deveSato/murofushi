@@ -76,6 +76,11 @@ iframe {
   width: 100%;
 }
 
+.w90c {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .scrollToTopArea {
   position: fixed;
   width: 2em;
@@ -106,20 +111,15 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   padding: .5em;
 }
 
 .logoWrapper .raiponiaTree {
-  width: 2.2em;
-}
-
-.logoWrapper h1.raiponia {
-  margin: 0;
-}
-
-.logoWrapper img.raiponiaLogoText {
-  width: 2.2em;
+  width: 3em;
 }
 
 .lineTelWrapper {
@@ -399,15 +399,17 @@ section.video {
   overflow: hidden;
 }
 
-section.video video {
-  position: absolute;
-  top: 0;
-  left: 0;
+section.video .videoWrapper {
+  margin-top: 7em;
+}
+
+section.video .videoWrapper video {
   width: 100%;
   height: auto;
-  background: url("../video/videobg.png") no-repeat;
+  background: url(../video/videobg.png) no-repeat;
   background-size: cover;
   z-index: -1;
+  margin: 0 auto;
 }
 
 section.video .bg-white {
