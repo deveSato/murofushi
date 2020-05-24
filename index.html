@@ -14,7 +14,7 @@
 	<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
 	<link href="./css/style.css" rel="stylesheet" />
 	<link href="./css/header.css" rel="stylesheet" />
-
+	<link href="./css/ImageFader.css" rel="stylesheet" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&family=Roboto:wght@100;300;700;900&family=M+PLUS+1p&display=swap" 
 		rel="stylesheet">
@@ -27,6 +27,7 @@
 	<!-- <script type="text/javascript" src="./script/scroll.js"></script> -->
 	<!-- <script src="./script/smooth-scroll.js"></script> -->
 	<script src="script/smoothScroll.js"></script>
+	<script src="script/onLoad.js"></script>
 </head>
 
 
@@ -91,9 +92,9 @@
 			</div>
 		</div>
 
-		<section id="topImage" class="heroSection">
+		<section class="heroSection">
 			<div id="dummyTop"></div>
-			<div  class="topImage">
+			<div  id="topImage" class="topImage">
 				<!-- <img src="./img/topImage.jpg" alt="トップ画像"> -->
 			</div>
 		</section>
@@ -143,11 +144,27 @@
 			</div>
 			<div>
 				<h2>STYLE</h2>
-				<div>
-					<img src="./img/style4.jpg" alt="">
+				<div class="imageFaderWrapper">
+					<!-- <img src="./img/style4.jpg" alt=""> -->
+					<div class="bgImg src1"></div>
+					<div class="bgImg src2"></div>
+					<div class="bgImg src3"></div>
+					<div class="bgImg src4"></div>
 				</div>
 			</div>
 		</section>
+
+
+		<!-- <div class="box">
+			<div class="bgImg src1"></div>
+			<div class="bgImg src2"></div>
+			<div class="bgImg src3"></div>
+			<div class="bgImg src4"></div>
+			<div class="boxString">フェード<br>切り替え</div>
+		  </div> -->
+		  
+
+
 		<section>
 			<div>
 				<h2>MENU/PRICE</h2>
@@ -180,6 +197,10 @@
 							<li>
 								<span>spa</span>
 								<span class="price">4,500</span>
+							</li>
+							<li>
+								<span></span>
+								<span>(without tax)</span>
 							</li>
 						</ul>
 					</div>
@@ -277,10 +298,10 @@
 				<video playsinline autoplay muted loop>
 					<source src="./video/pvShort.mp4" type="video/mp4">
 				</video>
-				<div class="bg-white">
+				<!-- <div class="bg-white">
 					<h2>Headline</h2>
 					<p>Example text... Example text... Example text... </p>
-				</div>
+				</div> -->
 			</div>
 		</section>
 

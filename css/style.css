@@ -144,6 +144,17 @@ iframe {
   height: 100vh;
   background: url(../img/topImage.jpg) 0 0 no-repeat;
   background-size: cover;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+  -webkit-transition: -webkit-filter 3s;
+  transition: -webkit-filter 3s;
+  transition: filter 3s;
+  transition: filter 3s, -webkit-filter 3s;
+}
+
+.topImage.color {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .concept h2 {
@@ -164,6 +175,11 @@ iframe {
 
 .roomImage {
   margin-bottom: 20%;
+}
+
+.menuWrapper {
+  margin-top: 1em;
+  border: 1px groove;
 }
 
 .menuWrapper .menuAndPrice {
@@ -201,6 +217,7 @@ iframe {
 .menuWrapper .moreInfoWrapper .moreInfo {
   background: #888;
   padding: .5em;
+  margin: 0 .5em .5em 0;
 }
 
 .reservation .text {
