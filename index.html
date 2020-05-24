@@ -24,13 +24,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
 
 	<script type="text/javascript" src="./script/script.js"></script>
-	<script type="text/javascript" src="./script/scroll.js"></script>
+	<!-- <script type="text/javascript" src="./script/scroll.js"></script> -->
+	<script src="./script/smooth-scroll.js"></script>
 </head>
 
 
 <body>
 	<article>
-		<header>
+		<header data-scroll-header>
 			<div class="l-header headerWrapper">
 				<div class="l-drawer">
 					<input class="l-drawer__checkbox" id="drawerCheckbox" type="checkbox" >
@@ -83,7 +84,9 @@
 
 		<div class="scrollToTopArea">
 			<div class="js-smooth-scroll">
-				<img id="toTop" class="js-smooth-scroll" src="./img/ArrowUp.svg" alt="上へボタン">
+				<a data-scroll href="#anchor01">
+					<img id="toTop" class="js-smooth-scroll" src="./img/ArrowUp.svg" alt="上へボタン">
+				</a>
 			</div>
 		</div>
 
@@ -314,7 +317,12 @@
 		</footer>
 	</article>
 	<script type="text/javascript" src="./script/intersection.js"> </script>
-
+	
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]',{
+			header: '[data-scroll-header]'
+		});
+	</script>
 </body>
 
 </html>
