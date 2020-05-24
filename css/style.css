@@ -4,6 +4,10 @@ html, body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 16px/1.6 "Roboto", sans-serif, "Hiragino Kaku Gothic Pro", "メイリオ", 　Meiryo, "M PLUS 1p";
   margin: 0;
@@ -80,18 +84,6 @@ iframe {
 .scrollToTopArea .js-smooth-scroll {
   width: 3em;
   height: 3em;
-}
-
-.scrollToTopArea .js-smooth-scroll #toTop {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.scrollToTopArea .js-smooth-scroll #toTop.isShown {
-  opacity: 1;
-  visibility: visible;
 }
 
 .logoWrapper {
