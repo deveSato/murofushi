@@ -1,5 +1,5 @@
 #styleTable .styleTableSection {
-  height: 130vh;
+  height: 350vh;
 }
 
 #styleTable h2 {
@@ -13,16 +13,21 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
 
 #styleTable .styleTable .styleTableItem {
-  margin-bottom: 5%;
-  width: 45%;
+  margin-bottom: 4%;
+  width: 48%;
   overflow: hidden;
+}
+
+#styleTable .styleTable .styleTableItem:nth-of-type(2n+1) {
+  margin-right: 4%;
 }
 
 #styleTable .styleTable .styleTableItem .square-content {
@@ -38,13 +43,13 @@
 }
 
 #styleTable .styleTable .styleTableItem .square-content.pic2 {
-  background: url("../img/styleDetail1/pic2.jpg");
+  background: url("../img/style1.jpg");
   background-size: cover;
 }
 
 #styleDetail .styleDetailSection {
-  padding: 5em 2em 0;
-  padding-min-height: 180vh;
+  padding: 5em 2em 0 2em;
+  min-height: 180vh;
 }
 
 #styleDetail .styleDetailHeading {
