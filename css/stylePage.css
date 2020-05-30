@@ -20,10 +20,26 @@
 }
 
 #styleTable .styleTable .styleTableItem {
-  margin-bottom: 1em;
+  margin-bottom: 5%;
   width: 45%;
-  height: 9.2em;
   overflow: hidden;
+}
+
+#styleTable .styleTable .styleTableItem .square-content {
+  display: block;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+#styleTable .styleTable .styleTableItem .square-content.pic1 {
+  background: url("../img/styleDetail1/pic1.jpg");
+  background-size: cover;
+}
+
+#styleTable .styleTable .styleTableItem .square-content.pic2 {
+  background: url("../img/styleDetail1/pic2.jpg");
+  background-size: cover;
 }
 
 #styleDetail .styleDetailSection {
