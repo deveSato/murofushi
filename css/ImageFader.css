@@ -6,7 +6,7 @@
 }
 
 .imageFaderWrapper.style {
-  height: 50%;
+  min-height: 80vh;
 }
 
 .imageFaderWrapper.style .bgImg {

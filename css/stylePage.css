@@ -1,0 +1,106 @@
+#styleTable .styleTableSection {
+  height: 130vh;
+}
+
+#styleTable h2 {
+  margin-top: 4em;
+}
+
+#styleTable .styleTable {
+  height: 42em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#styleTable .styleTable .styleTableItem {
+  margin-bottom: 1em;
+  width: 45%;
+  height: 9.2em;
+  overflow: hidden;
+}
+
+#styleDetail .styleDetailSection {
+  padding: 0 2em;
+  height: 150vh;
+}
+
+#styleDetail .styleDetailHeading {
+  color: transparent;
+}
+
+#styleDetail .smallPicWrapper {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+#styleDetail .smallPicWrapper .stylePicSmall {
+  width: 30%;
+}
+
+#styleDetail .smallPicWrapper .stylePicSmall img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 6em;
+}
+
+#styleDetail .dataArea {
+  margin-top: 2em;
+}
+
+#styleDetail .dataArea .detailTable {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #333;
+  font-size: .7em;
+  width: 90%;
+}
+
+#styleDetail .dataArea .detailTable:last-of-type {
+  border-bottom: 1px solid #333;
+}
+
+#styleDetail .dataArea .detailTable dt {
+  width: 6.5em;
+  padding: .8em .2em;
+  font-weight: bold;
+}
+
+#styleDetail .dataArea .detailTable dd {
+  margin-left: 1em;
+  padding: .8em .2em;
+}
+
+#styleDetail .textArea {
+  margin-top: 2.5em;
+  font-size: .8em;
+}
+
+#styleDetail .backButtonArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#styleDetail .backButtonArea a.backButton {
+  color: #333;
+}
+/*# sourceMappingURL=stylePage.css.map */
