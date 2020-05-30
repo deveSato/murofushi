@@ -27,8 +27,8 @@
 }
 
 #styleDetail .styleDetailSection {
-  padding: 0 2em;
-  height: 150vh;
+  padding: 5em 2em 0;
+  padding-min-height: 180vh;
 }
 
 #styleDetail .styleDetailHeading {
