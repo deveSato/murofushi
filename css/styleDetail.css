@@ -1,52 +1,3 @@
-#styleTable .styleTableSection {
-  height: 350vh;
-}
-
-#styleTable h2 {
-  margin-top: 4em;
-}
-
-#styleTable .styleTable {
-  height: 42em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-}
-
-#styleTable .styleTable .styleTableItem {
-  margin-bottom: 4%;
-  width: 48%;
-  overflow: hidden;
-}
-
-#styleTable .styleTable .styleTableItem:nth-of-type(2n+1) {
-  margin-right: 4%;
-}
-
-#styleTable .styleTable .styleTableItem .square-content {
-  display: block;
-  height: 0;
-  width: 100%;
-  padding-bottom: 100%;
-}
-
-#styleTable .styleTable .styleTableItem .square-content.pic1 {
-  background: url("../img/styleDetail1/pic1.jpg");
-  background-size: cover;
-}
-
-#styleTable .styleTable .styleTableItem .square-content.pic2 {
-  background: url("../img/style1.jpg");
-  background-size: cover;
-}
-
 #styleDetail .styleDetailSection {
   padding: 5em 2em 0 2em;
   min-height: 180vh;
@@ -124,4 +75,4 @@
 #styleDetail .backButtonArea a.backButton {
   color: #333;
 }
-/*# sourceMappingURL=stylePage.css.map */
+/*# sourceMappingURL=styleDetail.css.map */
