@@ -1,0 +1,80 @@
+#menuPrice
+	.menuPriceSection
+		height: 150vh
+	.menuPriceHeading
+		margin-top: 4em
+	.menuTitle
+		display: flex
+		justify-content: space-between
+		margin-bottom: 1em
+		padding: 1em 2em
+		color: #fff
+		background: #c0c0C0
+	.dataArea
+		margin-top: 1em
+		margin-bottom: 1em
+		display: none
+		height: 0//初期値は非表示にするため高さをZEROにする
+		// visibility: hidden
+		// opacity: 0
+		// transition: .8s
+		.detailTable
+			width: 50%
+			margin: 0 auto
+			display: flex
+			font-size: .7em
+			dt
+				width: 6.5em
+				padding: .8em .2em
+				font-weight: bold
+				&.siraga
+					height: 2em
+				&.trans
+					color: transparent
+			dd
+				margin-left: 1em
+				padding: .8em .2em
+		&.visible
+			display: block
+			animation: visible 1s linear 0s
+			height: auto
+			// visibility: visible
+			// opacity: 1
+			// transition: 2s
+	.cut .detailTable
+		width: 45%
+	.designColor .dataArea .detailTable dt
+		width: 55%
+	.superStraight .dataArea .detailTable
+		width: 80%
+		dt
+			width: 70%
+	.waveCurl > dt
+		width: 58%
+	.headSpa .detailTable
+		width: 35%
+	.treatment .dataArea .detailTable
+		width: 70%
+		dt
+			width: 70%
+	.styling .dataArea .detailTable dt
+		width: 70%
+	.warningArea
+		font-size: .6em
+		margin: 2em auto 0
+		width: 85%
+		&.center
+			text-align: center
+	.backButtonArea
+		display: flex
+		justify-content: flex-end
+		a.backButton
+			color: #333
+
+
+@keyframes visible
+	from
+		opacity: 0
+	to
+		opacity: 1
+

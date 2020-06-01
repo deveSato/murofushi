@@ -1,0 +1,140 @@
+#menuPrice .menuPriceSection {
+  height: 150vh;
+}
+
+#menuPrice .menuPriceHeading {
+  margin-top: 4em;
+}
+
+#menuPrice .menuTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 1em 2em;
+  color: #fff;
+  background: #c0c0C0;
+}
+
+#menuPrice .dataArea {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: none;
+  height: 0;
+}
+
+#menuPrice .dataArea .detailTable {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .7em;
+}
+
+#menuPrice .dataArea .detailTable dt {
+  width: 6.5em;
+  padding: .8em .2em;
+  font-weight: bold;
+}
+
+#menuPrice .dataArea .detailTable dt.siraga {
+  height: 2em;
+}
+
+#menuPrice .dataArea .detailTable dt.trans {
+  color: transparent;
+}
+
+#menuPrice .dataArea .detailTable dd {
+  margin-left: 1em;
+  padding: .8em .2em;
+}
+
+#menuPrice .dataArea.visible {
+  display: block;
+  -webkit-animation: visible 1s linear 0s;
+          animation: visible 1s linear 0s;
+  height: auto;
+}
+
+#menuPrice .cut .detailTable {
+  width: 45%;
+}
+
+#menuPrice .designColor .dataArea .detailTable dt {
+  width: 55%;
+}
+
+#menuPrice .superStraight .dataArea .detailTable {
+  width: 80%;
+}
+
+#menuPrice .superStraight .dataArea .detailTable dt {
+  width: 70%;
+}
+
+#menuPrice .waveCurl > dt {
+  width: 58%;
+}
+
+#menuPrice .headSpa .detailTable {
+  width: 35%;
+}
+
+#menuPrice .treatment .dataArea .detailTable {
+  width: 70%;
+}
+
+#menuPrice .treatment .dataArea .detailTable dt {
+  width: 70%;
+}
+
+#menuPrice .styling .dataArea .detailTable dt {
+  width: 70%;
+}
+
+#menuPrice .warningArea {
+  font-size: .6em;
+  margin: 2em auto 0;
+  width: 85%;
+}
+
+#menuPrice .warningArea.center {
+  text-align: center;
+}
+
+#menuPrice .backButtonArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menuPrice .backButtonArea a.backButton {
+  color: #333;
+}
+
+@-webkit-keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=menuPrice.css.map */

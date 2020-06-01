@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<metacharset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>menuPrice</title>
+
+	<meta name="robots" content="noindex , nofollow" />
+	<!-- 佐藤　注　本番時は　解除すること！！！！！ -->
+
+
+
+	<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
+	<link href="./css/menuPrice.css" rel="stylesheet" />
+	<link href="./css/header.css" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&family=Roboto:wght@100;300;700;900&family=M+PLUS+1p&display=swap" 
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="./script/script.js"></script>
+	<!-- <script type="text/javascript" src="./script/scroll.js"></script> -->
+	<!-- <script src="./script/smooth-scroll.js"></script> -->
+	<script src="script/smoothScroll.js"></script>
+	<!-- <script src="script/onLoad.js"></script> -->
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!-- <script src="script/myVueScript.js"></script> -->
+	<!-- Vue.jsをぶちこんでやるぜ -->
+
+</head>
+
+
+<body>
+
+	<article id="menuPrice">
+		<header data-scroll-header>
+			<div class="l-header headerWrapper">
+				<div class="l-drawer">
+					<input class="l-drawer__checkbox" id="drawerCheckbox" type="checkbox" >
+					<!-- ハンバーガーアイコン -->
+					<label class="l-drawer__icon" for="drawerCheckbox">
+						<span class="l-drawer__icon-parts"></span>
+					</label>
+					<!-- 背景を暗く -->
+					<label class="l-drawer__overlay" for="drawerCheckbox"></label>
+					<div class="l-drawer__menu">
+						<nav>
+							<div class="ulArea">
+								<ul>
+									<li><a href="index.html">raiponiaとは</a></li>
+									<li><a href="styleTable.html">STYLE</a></li>
+									<li><a href="#">MENU/PRICE</a></li>
+									<li><a href="index.html#map">MAP</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>	
+				</div>
+				<div class="logoWrapper">
+					<span>
+						<h1 class="raiponia"> 
+							<img class="raiponiaTree" src="./img/Logo.png" alt="メインロゴイラスト">
+						</h1>
+					</span>
+					<!-- <span class="">
+						<h1 class="raiponia"> 
+							<img class="raiponiaLogoText" src="./img/mainLogoText.png" alt="メインロゴテキスト">
+						</h1>
+					</span> -->
+				</div>
+				<div class="lineTelWrapper">
+					<span>
+						<a href="https://line.me/ja/">
+							<img class="lineLogo" src="./img/lineIcon.svg" alt="lineロゴ"></a>
+					</span>
+					<span>
+						<a href="tel:03-6454-6561">
+							<img class="telLogo" src="./img/telephoneIcon.svg" alt="telロゴ">
+						</a>
+					</span>
+				</div>
+
+			</div>
+				
+		
+		
+		</header>
+
+		<div class="scrollToTopArea">
+			<div class="js-smooth-scroll">
+				<a href="#topImage">
+					<img id="toTop" class="js-smooth-scroll" src="./img/ArrowUp.svg" alt="上へボタン">
+				</a>
+			</div>
+		</div>
+
+
+
+
+
+		<section class="menuPriceSection">
+
+			<div>
+				<h2 class="menuPriceHeading">MENU/PRICE</h2>
+				<div class=""></div>
+			</div>
+
+			<div id="menuPrice">
+				<div>
+					<div class="cut">
+						<div class="menuTitle cut">
+							<input id="inputCut" type="checkbox" class="checkbox cut" @click="setVisibleTrue" hidden>
+							<!-- <input type="checkbox" id="cut" value="cut" v-model="checkedNames"> -->
+							<span><label for="inputCut">cut</span>
+							<label for="inputCut">+</span>
+							<!-- +ボタンはとりあえずテキストで表現。。。。。アイコンのがいい？？？？ -->
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.cut} ]">
+							<dl class="detailTable">
+								<dt>一般</dt>
+								<dd>¥4950</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>大学・専門</dt>
+								<dd>¥4400</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>高校生</dt>
+								<dd>¥3850</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>中学生</dt>
+								<dd>¥3300</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>小学生</dt>
+								<dd>¥2750</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>子供</dt>
+								<dd>¥2200</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>前髪</dt>
+								<dd>¥1100</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="color">			
+						<div class="menuTitle color">
+							<input id="inputColor" type="checkbox" class="checkbox color" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputColor">color
+							</span>
+							<label for="inputColor">+</span>
+							<!-- +ボタンはとりあえずテキストで表現。。。。。アイコンのがいい？？？？ -->
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.color} ]">
+							<dl class="detailTable">
+								<dt>フルカラー</dt>
+								<dd>S</dd>
+								<dd>¥5500</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt class="trans">フルカラー</dt>
+								<dd>M</dd>
+								<dd>¥6050</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt class="trans">フルカラー</dt>
+								<dd>L</dd> 
+								<dd>¥6600</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt class="siraga">
+									<span>フルカラー（白髪染め）</span>
+								</dt>
+								<dd>S</dd>
+								<dd>¥5500</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt class="siraga trans">フルカラー（白髪染め）</dt>
+								<dd>M</dd>
+								<dd>¥6050</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt class="siraga trans">フルカラー（白髪染め）</dt>
+								<dd>L</dd>
+								<dd>¥6600</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>リタッチ</dt>
+								<dd>¥5500</dd>
+							</dl>
+
+
+
+						</div>
+					</div>
+
+					<div class="designColor">
+						<div class="menuTitle designColor">
+							<input id="inputDesigncolor" type="checkbox" class="checkbox designColor" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputDesigncolor">design color
+							</span>
+							<label for="inputDesigncolor">+</span>
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.designColor} ]">
+							<dl class="detailTable">
+								<dt>ポイント</dt>
+								<dd>¥4400〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>インナー</dt>
+								<dd>¥4400〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ポイント</dt>
+								<dd>¥4400〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>インナー</dt>
+								<dd>¥4400〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ハイライト</dt>
+								<dd>¥6600〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ローライト</dt>
+								<dd>¥6600〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>3D</dt>
+								<dd>¥7150〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>グラデーション</dt>
+								<dd>¥7150〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>バレイヤージュ</dt>
+								<dd>¥8800〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>Wカラー</dt>
+								<dd>¥11000〜</dd>
+							</dl>
+							<p class="warningArea">
+								ケアブリーチ込み・低ダメージで仕上げられるPLEX系処理剤を使用。髪へのダメージを最小限におさえます。
+							</p>
+							<p class="warningArea">
+								※ブリーチ剤を使用する施術に関しましては、内容またかかるお時間によって価格に変動がございますため、事前のご相談・お問い合わせの方をおすすめ致します。
+							</p>
+						</div>
+					</div>
+
+					<div class="waveCurl">
+						<div class="menuTitle waveCurl">
+							<input id="inputWaveCurl" type="checkbox" class="checkbox waveCurl" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputWaveCurl">wave & curl
+							</span>
+							<label for="inputWaveCurl">+</span>
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.waveCurl} ]">
+							<dl class="detailTable">
+								<dt>スタンダード</dt>
+								<dd>¥6600</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ポイント</dt>
+								<dd>¥4400〜</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ミックス</dt>
+								<dd>¥7700</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ピン</dt>
+								<dd>¥8250</dd>
+							</dl>
+							<p class="warningArea center">
+								特殊（ツイスト・スパイラル・アフロetc） お尋ね下さい。
+							</p>
+						</div>
+					</div>
+
+					<div class="superStraight">
+						<div class="menuTitle superStraight">
+							<input id="inputSuperStraight" type="checkbox" class="checkbox superStraight" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputSuperStraight">super straight
+							</span>
+							<label for="inputSuperStraight">+</span>
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.superStraight} ]">
+							<dl class="detailTable">
+								<dt>縮毛矯正  （カット・ブロー込み）</dt>
+								<dd>¥15950</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>ポイント（カット・ブロー込み）</dt>
+								<dd>¥9900〜</dd>
+							</dl>
+						</div>
+					</div>
+
+
+					<div class="headSpa">
+						<div class="menuTitle headSpa">
+							<input id="inputHeadSpa" type="checkbox" class="checkbox headSpa" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputHeadSpa">head spa
+							</span>
+							<label for="inputHeadSpa">+</span>
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.headSpa} ]">
+							<dl class="detailTable">
+								<dt>25分</dt>
+								<dd>¥2750</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>45分</dt>
+								<dd>¥4950</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="treatment">
+						<div class="menuTitle treatment">
+							<input id="inputTreatment" type="checkbox" class="checkbox treatment" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputTreatment">treatment
+							</span>
+							<label for="inputTreatment">+</span>
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.treatment} ]">
+							<dl class="detailTable">
+								<dt>ムコタシステムトリートメント</dt>
+								<dd>¥4400</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>トリプルケラチン×プレックス</dt>
+								<dd>¥4400</dd>
+							</dl>
+						</div>
+					</div>
+					
+					<div class="styling">
+						<div class="menuTitle styling">
+							<input id="inputStyling" type="checkbox" class="checkbox styling" @click="setVisibleTrue" hidden>
+							<span>
+								<label for="inputStyling">styling
+							</span>
+							<label for="inputStyling">+</span>
+						</div>
+						<div :class="['dataArea' , {visible: isVisible.styling} ]">
+							<dl class="detailTable">
+								<dt>シャンプーブロー</dt>
+								<dd>¥2200</dd>
+							</dl>
+							<dl class="detailTable">
+								<dt>アップアレンジ</dt>
+								<dd>¥4400</dd>
+							</dl>
+						</div>
+					</div>
+
+
+					<div class="warningArea">
+						<p>
+							※税込価格(消費税10%)
+						</p>
+						<p>
+							※提示以外のロング料金なし。
+						</p>
+						<p>
+							※カット以外の単品メニューの場合は、別途シャンプー＆ブロー代がかかります。
+						</p>
+						<p>
+							※施術後１０日以内のメンテナンス無料。
+						</p>
+					</div>
+
+
+
+				</div>
+				<div class="backButtonArea">
+					<a class="backButton" href="index.html"><span>&lt;&lt;&nbsp;back</span></a>
+				</div>
+			</div>
+			
+
+
+		</section>
+
+
+		
+
+
+		<footer>
+			<div class="footer">
+				<div>	
+					<menu>
+						<ul>
+							<li>raiponiaとは</li>
+							<li>STYLE</li>
+							<li>MENU/PRICE</li>
+							<li>MAP</li>
+						</ul>
+					</menu>
+				</div>
+				<div class="runder">
+					<a href="">
+						<img class="" src="./img/partner.png" alt="">
+					</a>
+				</div>
+				<div class="rcc">
+					<a href="">
+						<img class="" src="./img/titleRCC.png" alt="">
+					</a>
+				</div>
+
+
+				<div class="infoWrapper">
+					<p class="shopInfo">高円寺の美容室・美容院・隠れ家ヘアサロン／RAIPONIA</p>
+					<p class="copyright">
+						<small>Copyright(C) 2010-2020 All rights Reserved.</small>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</article>
+	<!-- <script type="text/javascript" src="./script/intersection.js"> </script> -->
+	<script src="script/myVueScript.js"></script>
+	<!-- Vue.jsをぶちこんでやるぜ -->
+
+</body>
+
+</html>
