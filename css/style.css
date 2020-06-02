@@ -147,7 +147,7 @@ iframe {
 
 .topImage {
   height: 100vh;
-  background: url(../img/topImage.jpg) 0 0 no-repeat;
+  background: url(../img/topImage-min.jpg) 0 0 no-repeat;
   background-size: cover;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
