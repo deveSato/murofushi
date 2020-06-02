@@ -151,10 +151,10 @@ iframe {
   background-size: cover;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
-  -webkit-transition: -webkit-filter 0.1s;
-  transition: -webkit-filter 0.1s;
-  transition: filter 0.1s;
-  transition: filter 0.1s, -webkit-filter 0.1s;
+  -webkit-transition: -webkit-filter 3s;
+  transition: -webkit-filter 3s;
+  transition: filter 3s;
+  transition: filter 3s, -webkit-filter 3s;
 }
 
 .topImage.color {
