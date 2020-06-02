@@ -56,13 +56,17 @@
 
 #menuPrice .dataArea.visible {
   display: block;
-  -webkit-animation: visible 1s linear 0s;
-          animation: visible 1s linear 0s;
+  -webkit-animation: visible 0.5s linear 0s;
+          animation: visible 0.5s linear 0s;
   height: auto;
 }
 
 #menuPrice .cut .detailTable {
   width: 45%;
+}
+
+#menuPrice .color .detailTable dd.size {
+  width: 1.5em;
 }
 
 #menuPrice .designColor .dataArea .detailTable dt {
@@ -85,8 +89,12 @@
   width: 35%;
 }
 
+#menuPrice .headSpa .detailTable dt {
+  width: 4em;
+}
+
 #menuPrice .treatment .dataArea .detailTable {
-  width: 70%;
+  width: 80%;
 }
 
 #menuPrice .treatment .dataArea .detailTable dt {
