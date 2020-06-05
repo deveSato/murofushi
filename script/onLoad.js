@@ -11,6 +11,14 @@ function setColorDelay() {
 function setColor(){
 	var target = document.getElementById("topImage");
 	target.classList.add("color")
+
+	const elem = document.getElementsByClassName("dotWrapper")[0];
+	elem.classList.add("hidden");
+
 	// target.innerHTML = "JavaScriptが実行されました。";
 
 };
+
+
+	
+	
