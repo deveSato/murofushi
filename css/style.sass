@@ -78,6 +78,18 @@ iframe
 	// google Map 向け
 	width: 100%
 
+.dotWrapper
+	display: flex
+	width: 100%
+	height: 100vh
+	background: black
+	z-index: 1
+	position: absolute
+	justify-content: center
+	align-items: center
+	&.hidden
+		display: none
+
 .w90c
 	margin: 0 auto
 	width: 90%
@@ -187,6 +199,16 @@ iframe
 			background: #888
 			padding: .5em
 			margin: 0 .5em .5em 0
+
+.style
+	.moreInfoWrapper
+		display: flex
+		justify-content: flex-end
+		.moreInfo
+			background: #888
+			padding: .5em
+			margin: 0 .5em .5em 0
+
 
 
 .reservation

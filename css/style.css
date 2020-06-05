@@ -76,6 +76,27 @@ iframe {
   width: 100%;
 }
 
+.dotWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 1;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dotWrapper.hidden {
+  display: none;
+}
+
 .w90c {
   margin: 0 auto;
   width: 90%;
@@ -220,6 +241,21 @@ iframe {
 }
 
 .menuWrapper .moreInfoWrapper .moreInfo {
+  background: #888;
+  padding: .5em;
+  margin: 0 .5em .5em 0;
+}
+
+.style .moreInfoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.style .moreInfoWrapper .moreInfo {
   background: #888;
   padding: .5em;
   margin: 0 .5em .5em 0;

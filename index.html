@@ -15,6 +15,7 @@
 	<link href="./css/style.css" rel="stylesheet" />
 	<link href="./css/header.css" rel="stylesheet" />
 	<link href="./css/ImageFader.css" rel="stylesheet" />
+	<link href="./css/three-dots.css" rel="stylesheet" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&family=Roboto:wght@100;300;700;900&family=M+PLUS+1p&display=swap" 
 		rel="stylesheet">
@@ -94,6 +95,9 @@
 			</div>
 		</div>
 
+		<div class="dotWrapper">
+			<div class="dot-typing"></div>
+		</div>
 		<section class="heroSection">
 			<div id="dummyTop"></div>
 			<div  id="topImage" class="topImage">
@@ -156,7 +160,7 @@
 						<!-- <img src="./img/roomDesk2.jpg" alt=""> -->
 				</div>
 			</div>
-			<div>
+			<div class="style">
 				<h2>STYLE</h2>
 				<div class="imageFaderWrapper style">
 					<p>a</p>
@@ -166,6 +170,10 @@
 					<div class="bgImg src3"></div>
 					<div class="bgImg src4"></div>
 				</div>
+				<a class="moreInfoWrapper" href="styleTable.html">
+					<span class="moreInfo">more info</span>
+				</a>
+
 			</div>
 		</section>
 
@@ -354,6 +362,16 @@
 			header: '[data-scroll-header]'
 		});
 	</script> -->
+	<script>
+	
+	
+	window.onload = function () {
+		// ここに読み込み完了時に実行してほしい内容を書く。
+			// console.log("fffff")
+			const elem = document.getElementsByClassName("dotWrapper")[0];
+			elem.classList.add("hidden");
+		}
+	</script>
 </body>
 
 </html>

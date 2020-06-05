@@ -26,3 +26,4 @@ function initMap() {
 		map.mapTypes.set( 'GrayScaleMap', mapType);
 		map.setMapTypeId( 'GrayScaleMap' );
 }
+
