@@ -3,7 +3,7 @@ window.onload = function () {
 }
 function setColorDelay() {
 	setTimeout(hideLoadingCSS, 0);
-	setTimeout(setColor, 5000);
+	setTimeout(setColor, 1000);
 }
 
 function setColor(){
