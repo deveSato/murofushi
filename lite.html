@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<metacharset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>TopPage | index.html</title>
+
+	<meta name="robots" content="noindex , nofollow" />
+	<!-- 佐藤　注　本番時は　解除すること！！！！！ -->
+
+
+
+
+	<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
+	<link href="./css/header.css" rel="stylesheet" />
+	<link href="./css/ImageFader.css" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&family=Roboto:wght@100;300;700;900&family=M+PLUS+1p&display=swap" 
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
+
+	<script type="text/javascript" src="./script/script.js"></script>
+	<!-- <script type="text/javascript" src="./script/scroll.js"></script> -->
+	<!-- <script src="./script/smooth-scroll.js"></script> -->
+	<script src="script/smoothScroll.js"></script>
+	<script src="script/onLoad.js"></script>
+</head>
+
+
+<body>
+	<article>
+		<header data-scroll-header>
+			<div class="l-header headerWrapper">
+				<div class="l-drawer">
+					<input class="l-drawer__checkbox" id="drawerCheckbox" type="checkbox" >
+					<!-- ハンバーガーアイコン -->
+					<label class="l-drawer__icon" for="drawerCheckbox">
+						<span class="l-drawer__icon-parts"></span>
+					</label>
+					<!-- 背景を暗く -->
+					<label class="l-drawer__overlay" for="drawerCheckbox"></label>
+					<div class="l-drawer__menu">
+						<nav>
+							<div class="ulArea">
+								<ul>
+									<li><a href="#">raiponiaとは</a></li>
+									<li><a href="styleTable.html">STYLE</a></li>
+									<li><a href="menuPrice.html">MENU/PRICE</a></li>
+									<li><a href="#map">MAP</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>	
+				</div>
+				<div class="logoWrapper">
+					<span>
+						<h1 class="raiponia"> 
+							<img class="raiponiaTree" src="./img/Logo.png" alt="メインロゴイラスト">
+						</h1>
+					</span>
+					<!-- <span class="">
+						<h1 class="raiponia"> 
+							<img class="raiponiaLogoText" src="./img/mainLogoText.png" alt="メインロゴテキスト">
+						</h1>
+					</span> -->
+				</div>
+				<div class="lineTelWrapper">
+					<span>
+						<a href="https://line.me/ja/">
+							<img class="lineLogo" src="./img/lineIcon.svg" alt="lineロゴ"></a>
+					</span>
+					<span>
+						<a href="tel:03-6454-6561">
+							<img class="telLogo" src="./img/telephoneIcon.svg" alt="telロゴ">
+						</a>
+					</span>
+				</div>
+
+			</div>
+				
+		
+		
+		</header>
+
+		<div class="scrollToTopArea">
+			<div class="js-smooth-scroll">
+				<a href="#topImage">
+					<img id="toTop" class="js-smooth-scroll" src="./img/ArrowUp.svg" alt="上へボタン">
+				</a>
+			</div>
+		</div>
+
+		<section class="heroSection">
+			<div id="dummyTop"></div>
+			<div  id="topImage" class="topImage">
+				<!-- <img src="./img/topImage.jpg" alt="トップ画像"> -->
+			</div>
+		</section>
+
+		<section>
+			<div class="concept">
+				<h2>raiponiaとは</h2>
+				<div class="w90c"> 
+					<p>
+						都会にありながら喧騒を忘れさせるプライベートなカジュアルサロン。
+					</p>
+					<p>
+						「identity」「variation」「difference」<br>「careful」「imagination」「creation」
+					</p>
+					<p>
+						これらをすべて詰め込み、皆様のライフスタイルにより添い、
+						美容を通じて新しい価値を創造しお届けすることで、新たな発見や喜びを感じて頂きたい。
+						そんな想いでraiponiaは生まれました。
+					</p>
+					<p>
+						ぜひ一度、あなたもraiponiaワールドへ、迷い込んできてください。
+					</p>
+				</div>
+			</div>
+
+		</section>
+		<section>
+			<div class="info">
+				<h2>INFORMATION</h2>
+				<div class="w90c">				
+					<p class="date">2020/05/09</p>
+					<p class="text">営業再開のお知らせ</p>
+					<p class="date">2020/05/06</p>
+					<p class="text">今後の営業について</p>
+					<p class="date">2020/04/29</p>
+					<p class="text">4月30日〜5月6日まで臨時休業のお知らせ</p>
+					<p class="date">2020/04/16</p>
+					<p class="text">新型コロナウイルス対策によるご案内</p>
+					<p class="date">2018/10/05</p>
+					<p class="text">10月のスケジュール</p>
+				</div>
+
+				
+			</div>
+		</section>
+		<section class="longSection">
+			<div class="roomImage">
+				<h2>IMAGE</h2>
+				<div>
+					<!-- <div class="imageFaderWrapper image">
+						<div class="bgImg src1"></div>
+						<div class="bgImg src2"></div>
+						<div class="bgImg src3"></div>
+						<div class="bgImg src4"></div>
+					</div> -->
+				</div>
+			</div>
+			<div>
+				<h2>STYLE</h2>
+				<!-- <div class="imageFaderWrapper style">
+					<p>a</p>
+					<div class="bgImg src1"></div>
+					<div class="bgImg src2"></div>
+					<div class="bgImg src3"></div>
+					<div class="bgImg src4"></div>
+				</div> -->
+			</div>
+		</section>
+
+
+		<section class="menuAndPriceSection">
+			<div>
+				<h2>MENU/PRICE</h2>
+				<div>
+					<img src="./img/signSkateboard.JPG" alt="">
+				</div>
+				<div class="menuWrapper">
+					<div class="menuAndPrice">
+						<ul>
+							<li>
+								<span>cut</span>
+								<span class="price">4,500</span>
+							</li>
+							<li>
+								<span>color</span>
+								<span class="price nyoro">5,000</span>
+							</li>
+							<li>
+								<span>wave&curl</span>
+								<span class="price nyoro">6,000</span>
+							</li>
+							<li>
+								<span>superstraight</span>
+								<span class="price">15,000</span>
+							</li>
+							<li>
+								<span>treatment</span>
+								<span class="price nyoro">3,000</span>
+							</li>
+							<li>
+								<span>spa</span>
+								<span class="price">4,500</span>
+							</li>
+							<li>
+								<span></span>
+								<span>(without tax)</span>
+							</li>
+						</ul>
+					</div>
+					<a class="moreInfoWrapper" href="menuPrice.html">
+						<span class="moreInfo">more info</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="reservation">
+				<h2>RESERVATION</h2>
+
+				<div>
+					<div class="w90c">
+						<p class="text">ご予約は、電話またはLINEにて承っております。</p>
+					</div>
+					<div class="telAndLine">
+						<div class="tel">
+							<a href="tel:03-6454-6561">
+								<address>03-6454-6561</address>
+							</a>
+						</div>
+						<div class="line">
+							<a href="https://line.me/ja/">
+								official Line
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="longSection">
+			<div class="shopinfo">
+				<h2>SHOP INFO</h2>
+
+				<div>
+					<div class="w90c">
+						<div>
+							<p class="heading">OPEN</p>
+							<p class="text m0">平日＆土曜日 10:00～21:00 (カット受付PM20:00)</p>
+							<p class="text">日曜日 10:00～20:00 (カット受付PM19:00) </p>
+						</div>
+						<div>
+							<p class="heading">CLOSE</p>
+							<p class="text m0">毎週火曜日</p>
+							<p class="text">第三月曜日＋不定休</p>
+						</div>
+						<div>
+							<p class="heading">ADDRESS</p>
+							<address>
+								<p class="text">東京都杉並区高円寺南２丁目５２ー１２</p>
+							</address>
+						</div>
+					</div>
+					<div id="map" class="googlemaps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.949851964893!2d139.65008574964665!3d35.702851649940946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f289b345fd09%3A0x14f17cd13a94dcee!2sraiponia!5e0!3m2!1sja!2sjp!4v1589678682035!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="stylist">
+				<h2>STYLIST</h2>
+				<div class="imageWrappter">
+					<img src="./img/stylist.jpg" alt="">
+				</div>
+				<div class="w90c">
+					<p class="name">
+						<span class="kanji">室伏 大介</span>
+						<span class="alpha">Murofushi Daisuke</span>
+					</p>
+					<p class="text">
+						常に新しい挑戦で居心地よい空間と技術を作り上げています。一人ひとりの希望をしっかり汲みとり意表を突くようなアイデアをプラスしてその面白さを表現します。
+					</p>
+					<div class="favorites">
+						<h4 class="m0">Favorite</h4>
+						<div>
+							<ul class="">
+								<li class="">
+									<img src="./img/sunsetSea.jpg" alt="">
+								</li>
+								<li class="">
+									<img src="./img/bike.jpg" alt="">
+								</li>
+								<li class="">
+									<img src="./img/coffee.jpg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="video">
+			<div class="videoWrapper">
+				<!-- <video playsinline autoplay muted loop>
+					<source src="./video/pvShort.mp4" type="video/mp4">
+				</video> -->
+				<!-- <div class="bg-white">
+					<h2>Headline</h2>
+					<p>Example text... Example text... Example text... </p>
+				</div> -->
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<div>	
+					<menu>
+						<ul>
+							<li>raiponiaとは</li>
+							<li>STYLE</li>
+							<li>MENU/PRICE</li>
+							<li>MAP</li>
+						</ul>
+					</menu>
+				</div>
+				<div class="runder">
+					<a href="">
+						<img class="" src="./img/partner.png" alt="">
+					</a>
+				</div>
+				<div class="rcc">
+					<a href="">
+						<img class="" src="./img/titleRCC.png" alt="">
+					</a>
+				</div>
+
+
+				<div class="infoWrapper">
+					<p class="shopInfo">高円寺の美容室・美容院・隠れ家ヘアサロン／RAIPONIA</p>
+					<p class="copyright">
+						<small>Copyright(C) 2010-2020 All rights Reserved.</small>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</article>
+	<script type="text/javascript" src="./script/intersection.js"> </script>
+	
+	<!-- <script>
+		var scroll = new SmoothScroll('a[href*="#"]',{
+			header: '[data-scroll-header]'
+		});
+	</script> -->
+</body>
+
+</html>
