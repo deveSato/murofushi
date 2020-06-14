@@ -456,4 +456,20 @@ section.video .bg-white {
   left: 30px;
   padding: 20px;
 }
+
+.fadein {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fadein.is-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
 /*# sourceMappingURL=style.css.map */

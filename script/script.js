@@ -29,5 +29,17 @@ function initMap() {
 
 
 //遅延読み込みの実装
-const observer = lozad();
+// const observer = lozad();
+
+const observer = lozad('.lozad', {
+	load: function(el) {
+		// console.log(el.intersectionRect);
+		el.src = el.getAttribute('data-src');
+		let backgroundImageDelimiter = ',';
+		el.style.backgroundImage = `url('${el.getAttribute('data-background-image').split(backgroundImageDelimiter).join('\'),url(\'')}')`;
+		el.classList.add("is-show");
+	}
+});
+
+
 observer.observe();

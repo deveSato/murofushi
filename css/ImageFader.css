@@ -54,26 +54,22 @@
 }
 
 .imageFaderWrapper.image .bgImg.src1 {
-  background-image: url(../img/roomSoap.jpg);
   background-repeat: no-repeat;
 }
 
 .imageFaderWrapper.image .bgImg.src2 {
-  background-image: url(../img/roomCampChair.jpg);
   background-repeat: no-repeat;
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
 
 .imageFaderWrapper.image .bgImg.src3 {
-  background-image: url(../img/roomAudio1.jpg);
   background-repeat: no-repeat;
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
 }
 
 .imageFaderWrapper.image .bgImg.src4 {
-  background-image: url(../img/roomAll.jpg);
   background-repeat: no-repeat;
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
