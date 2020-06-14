@@ -27,3 +27,7 @@ function initMap() {
 		map.setMapTypeId( 'GrayScaleMap' );
 }
 
+
+//遅延読み込みの実装
+const observer = lozad();
+observer.observe();

@@ -6,7 +6,7 @@
 }
 
 .imageFaderWrapper.style {
-  min-height: 80vh;
+  padding-top: 150%;
 }
 
 .imageFaderWrapper.style .bgImg {
@@ -22,24 +22,17 @@
   background-repeat: no-repeat;
 }
 
-.imageFaderWrapper.style .bgImg.src1 {
-  background-image: url(../img/style1.jpg);
-}
-
 .imageFaderWrapper.style .bgImg.src2 {
-  background-image: url(../img/style2.jpg);
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
 
 .imageFaderWrapper.style .bgImg.src3 {
-  background-image: url(../img/style3.jpg);
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
 
 .imageFaderWrapper.style .bgImg.src4 {
-  background-image: url(../img/style4.jpg);
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }

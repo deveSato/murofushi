@@ -172,10 +172,10 @@ iframe {
   background-size: cover;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
-  -webkit-transition: -webkit-filter 3s;
-  transition: -webkit-filter 3s;
-  transition: filter 3s;
-  transition: filter 3s, -webkit-filter 3s;
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
 }
 
 .topImage.color {
@@ -258,7 +258,7 @@ iframe {
 .style .moreInfoWrapper .moreInfo {
   background: #888;
   padding: .5em;
-  margin: 0 .5em .5em 0;
+  margin: .5em 0;
 }
 
 .reservation .text {

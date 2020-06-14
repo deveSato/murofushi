@@ -23,7 +23,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
-
+	<script src="script/lozad.js"></script>
 </head>
 
 
@@ -158,17 +158,17 @@
 			<div class="style">
 				<h2>STYLE</h2>
 				<div class="imageFaderWrapper style">
-					<p>a</p>
-					<!-- <img src="./img/style4.jpg" alt=""> -->
-					<div class="bgImg src1"></div>
-					<div class="bgImg src2"></div>
-					<div class="bgImg src3"></div>
-					<div class="bgImg src4"></div>
+					<div class="bgImg src1 lozad" data-background-image="../img/style1.jpg"></div>
+					<div class="bgImg src2 lozad" data-background-image="../img/style2.jpg"></div>
+					<div class="bgImg src3 lozad" data-background-image="../img/style3.jpg"></div>
+					<div class="bgImg src4 lozad" data-background-image="../img/style4.jpg"></div>
 				</div>
-				<a class="moreInfoWrapper" href="styleTable.html">
-					<span class="moreInfo">more info</span>
-				</a>
-
+				<div>
+					<a class="moreInfoWrapper" href="styleTable.html">
+						<span class="moreInfo">more info</span>
+					</a>
+				</div>
+			
 			</div>
 		</section>
 
@@ -208,7 +208,7 @@
 							</li>
 							<li>
 								<span></span>
-								<span>(without tax)</span>
+								<span>(plus tax)</span>
 							</li>
 						</ul>
 					</div>
@@ -307,8 +307,9 @@
 
 		<section class="video">
 			<div class="videoWrapper">
-				<video playsinline autoplay muted loop>
-					<source src="./video/pvShort.mp4" type="video/mp4">
+				<video class = "lozad" data-src="./video/pvShort.mp4" playsinline autoplay muted loop>
+					<!-- <source src="./video/pvShort.mp4" type="video/mp4" -->
+					<source type="video/mp4" class = "lozad" data-src="./video/pvShort.mp4">
 				</video>
 				<!-- <div class="bg-white">
 					<h2>Headline</h2>
