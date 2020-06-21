@@ -22,43 +22,83 @@
 #menuPrice .dataArea {
   margin-top: 1em;
   margin-bottom: 1em;
-  display: none;
-  height: 0;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
-#menuPrice .dataArea .detailTable {
-  width: 50%;
-  margin: 0 auto;
+#menuPrice .dataArea li {
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: border-top     .3s ease-out;
+  transition: border-top     .3s ease-out;
+  -webkit-transition: padding-top 0.3s ease-out;
+  transition: padding-top 0.3s ease-out;
+  transition-transition: padding-bottom .3s ease-out;
+}
+
+#menuPrice .dataArea li p {
+  margin: 0;
+  line-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: border-top     .3s ease-out;
+  transition: border-top     .3s ease-out;
+  -webkit-transition: padding-top    .3s ease-out;
+  transition: padding-top    .3s ease-out;
+  -webkit-transition: padding-bottom .3s ease-out;
+  transition: padding-bottom .3s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: .7em;
 }
 
-#menuPrice .dataArea .detailTable dt {
-  width: 6.5em;
-  padding: .8em .2em;
-  font-weight: bold;
+#menuPrice .dataArea li p span:first-of-type {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 0 auto;
+          flex: 3 0 auto;
 }
 
-#menuPrice .dataArea .detailTable dt.siraga {
-  height: 2em;
+#menuPrice .dataArea li p span:nth-of-type(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: center;
 }
 
-#menuPrice .dataArea .detailTable dt.trans {
+#menuPrice .dataArea li p span:last-of-type {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 auto;
+          flex: 2 0 auto;
+  text-align: end;
+}
+
+#menuPrice .dataArea li p span.trans {
   color: transparent;
 }
 
-#menuPrice .dataArea .detailTable dd {
-  margin-left: 1em;
-  padding: .8em .2em;
+#menuPrice .dataArea.visible li {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  -webkit-transition: border-top .3s ease-out;
+  transition: border-top .3s ease-out;
+  -webkit-transition: padding-top .3s ease-out;
+  transition: padding-top .3s ease-out;
+  -webkit-transition: padding-bottom .3s ease-out;
+  transition: padding-bottom .3s ease-out;
 }
 
-#menuPrice .dataArea.visible {
-  display: block;
-  -webkit-animation: visible 0.5s linear 0s;
-          animation: visible 0.5s linear 0s;
-  height: auto;
+#menuPrice .dataArea.visible li p {
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.5;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: line-height .3s ease-out;
+  transition: line-height .3s ease-out;
+  -webkit-transition: opacity     .1s linear .1s;
+  transition: opacity     .1s linear .1s;
+  -webkit-transition: visibility  .1s linear .1s;
+  transition: visibility  .1s linear .1s;
 }
 
 #menuPrice .cut .detailTable {

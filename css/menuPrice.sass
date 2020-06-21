@@ -13,34 +13,51 @@
 	.dataArea
 		margin-top: 1em
 		margin-bottom: 1em
-		display: none
-		height: 0//初期値は非表示にするため高さをZEROにする
-		// visibility: hidden
-		// opacity: 0
-		// transition: .8s
-		.detailTable
-			width: 50%
-			margin: 0 auto
-			display: flex
-			font-size: .7em
-			dt
-				width: 6.5em
-				padding: .8em .2em
-				font-weight: bold
-				&.siraga
-					height: 2em
-				&.trans
+		transition: .8s
+		li
+			padding-top: 0
+			padding-bottom: 0
+			transition: border-top     .3s ease-out
+			transition: padding-top    .3s ease-out
+    		transition: padding-bottom .3s ease-out
+			p
+				margin: 0
+				line-height: 0
+				opacity: 0
+				visibility: hidden
+				transition: border-top     .3s ease-out
+				transition: padding-top    .3s ease-out
+				transition: padding-bottom .3s ease-out
+				display: flex
+				span:first-of-type
+					flex: 3 0 auto
+					// flex: 0 0 68%
+				span:nth-of-type(2)
+					flex: 1 0 auto
+					// flex: 0 0 5%
+					text-align: center
+				span:last-of-type
+					flex: 2 0 auto
+					// flex: 0 0 22%
+					text-align: end	
+				span.trans
 					color: transparent
-			dd
-				margin-left: 1em
-				padding: .8em .2em
 		&.visible
-			display: block
-			animation: visible 0.5s linear 0s
-			height: auto
-			// visibility: visible
-			// opacity: 1
-			// transition: 2s
+			li
+				padding-top: .5em
+				padding-bottom: .5em
+				transition:	border-top .3s ease-out
+				transition: padding-top .3s ease-out
+				transition:	padding-bottom .3s ease-out
+				p
+					margin: 0 auto
+					width: 80%
+					line-height: 1.5
+					opacity: 1
+					visibility: visible
+					transition: line-height .3s ease-out
+					transition: opacity     .1s linear .1s
+					transition:	visibility  .1s linear .1s
 	.cut .detailTable
 		width: 45%
 	.color .detailTable dd.size
