@@ -51,6 +51,7 @@ a:hover {
 
 address {
   font-style: normal;
+  font-size: .9em;
 }
 
 img {
@@ -270,11 +271,14 @@ iframe {
   display: flex;
   margin: 0 auto;
   width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .telAndLine .tel,
 .telAndLine .line {
-  padding: 1em 1.5em;
+  padding: 1em .5em;
   text-align: center;
   width: 50%;
   color: #eee;
