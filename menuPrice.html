@@ -110,11 +110,14 @@
 			<div id="menuPrice">
 				<div>
 					<div class="cut">
-						<div class="menuTitle cut">
-							<input id="inputCut" type="checkbox" class="checkbox cut" @click="setVisibleTrue" hidden>
-							<!-- <input type="checkbox" id="cut" value="cut" v-model="checkedNames"> -->
-							<span><label for="inputCut">cut</span>
-							<label for="inputCut">+</span>
+						<div class="menuTitle cut" @click="setVisibleTrue">
+							<input id="inputCut" type="checkbox" class="checkbox cut" hidden>
+							<span>
+								<label class="dummy cut">cut</label>
+							</span>
+							<span>
+								<label class="dummy cut">+</label>
+							</span>
 							<!-- +ボタンはとりあえずテキストで表現。。。。。アイコンのがいい？？？？ -->
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.cut} ]">
@@ -180,12 +183,14 @@
 					</div>
 
 					<div class="color">			
-						<div class="menuTitle color">
-							<input id="inputColor" type="checkbox" class="checkbox color" @click="setVisibleTrue" hidden>
+						<div class="menuTitle color" @click="setVisibleTrue">
+							<input id="inputColor" type="checkbox" class="checkbox color" hidden>
 							<span>
-								<label for="inputColor">color
+								<label class="dummy color">color
 							</span>
-							<label for="inputColor">+</span>
+							<span>
+								<label class="dummy color">+</label>
+							</span>
 							<!-- +ボタンはとりあえずテキストで表現。。。。。アイコンのがいい？？？？ -->
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.color} ]">
@@ -245,7 +250,7 @@
 					</div>
 
 					<div class="designColor">
-						<div class="menuTitle designColor">
+						<div class="menuTitle designColor" @click="setVisibleTrue">
 							<input id="inputDesigncolor" type="checkbox" class="checkbox designColor" @click="setVisibleTrue" hidden>
 							<span>
 								<label for="inputDesigncolor">design color
@@ -382,7 +387,7 @@
 					</div>
 
 					<div class="waveCurl">
-						<div class="menuTitle waveCurl">
+						<div class="menuTitle waveCurl" @click="setVisibleTrue">
 							<input id="inputWaveCurl" type="checkbox" class="checkbox waveCurl" @click="setVisibleTrue" hidden>
 							<span>
 								<label for="inputWaveCurl">wave & curl
@@ -448,7 +453,7 @@
 					</div>
 
 					<div class="superStraight">
-						<div class="menuTitle superStraight">
+						<div class="menuTitle superStraight" @click="setVisibleTrue">
 							<input id="inputSuperStraight" type="checkbox" class="checkbox superStraight" @click="setVisibleTrue" hidden>
 							<span>
 								<label for="inputSuperStraight">super straight
@@ -459,14 +464,14 @@
 							<ul>
 								<li>
 									<p>
-										<span>縮毛矯正（カット・ブロー込み）</span>
+										<span class="fs07">縮毛矯正（カット・ブロー込み）</span>
 										<span></span>
 										<span>¥15950</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										<span>ポイント（カット・ブロー込み）</span>
+										<span class="fs07">ポイント（カット・ブロー込み）</span>
 										<span></span>
 										<span>¥9900〜</span>
 									</p>
@@ -478,7 +483,7 @@
 
 
 					<div class="headSpa">
-						<div class="menuTitle headSpa">
+						<div class="menuTitle headSpa" @click="setVisibleTrue">
 							<input id="inputHeadSpa" type="checkbox" class="checkbox headSpa" @click="setVisibleTrue" hidden>
 							<span>
 								<label for="inputHeadSpa">head spa
@@ -506,7 +511,7 @@
 					</div>
 					
 					<div class="treatment">
-						<div class="menuTitle treatment">
+						<div class="menuTitle treatment" @click="setVisibleTrue">
 							<input id="inputTreatment" type="checkbox" class="checkbox treatment" @click="setVisibleTrue" hidden>
 							<span>
 								<label for="inputTreatment">treatment
@@ -517,14 +522,14 @@
 							<ul>
 								<li>
 									<p>
-										<span>ムコタシステムトリートメント</span>
+										<span class="fs07">ムコタシステムトリートメント</span>
 										<span></span>
 										<span>¥4400</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										<span>トリプルケラチン×プレックス</span>
+										<span class="fs07">トリプルケラチン×プレックス</span>
 										<span></span>
 										<span>¥4400</span>
 									</p>
@@ -534,7 +539,7 @@
 					</div>
 					
 					<div class="styling">
-						<div class="menuTitle styling">
+						<div class="menuTitle styling" @click="setVisibleTrue">
 							<input id="inputStyling" type="checkbox" class="checkbox styling" @click="setVisibleTrue" hidden>
 							<span>
 								<label for="inputStyling">styling

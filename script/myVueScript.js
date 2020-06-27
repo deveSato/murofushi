@@ -47,6 +47,7 @@ var app = new Vue({
 			// Object.keys(this.isVisible).forEach(function(key) {
 			// 	console.log(this.isVisible[key])
 			//   });
+			console.log("hey...");
 			const obj = this.isVisible
 			const targetName = event.target.classList[1]
 			Object.keys(obj).forEach(function(key) {
@@ -56,8 +57,6 @@ var app = new Vue({
 				} 
 				// console.log(key, val);
 			}, obj);
-
-
 			this.isVisible[targetName] = !this.isVisible[targetName]
 		}
 		
