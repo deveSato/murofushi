@@ -111,14 +111,12 @@
 				<div>
 					<div class="cut">
 						<div class="menuTitle cut" @click="setVisibleTrue">
-							<input id="inputCut" type="checkbox" class="checkbox cut" hidden>
 							<span>
 								<label class="dummy cut">cut</label>
 							</span>
 							<span>
 								<label class="dummy cut">+</label>
 							</span>
-							<!-- +ボタンはとりあえずテキストで表現。。。。。アイコンのがいい？？？？ -->
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.cut} ]">
 							<ul>
@@ -184,14 +182,12 @@
 
 					<div class="color">			
 						<div class="menuTitle color" @click="setVisibleTrue">
-							<input id="inputColor" type="checkbox" class="checkbox color" hidden>
 							<span>
-								<label class="dummy color">color
+								<label class="dummy color">color</label>
 							</span>
 							<span>
 								<label class="dummy color">+</label>
 							</span>
-							<!-- +ボタンはとりあえずテキストで表現。。。。。アイコンのがいい？？？？ -->
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.color} ]">
 							<ul>
@@ -251,11 +247,12 @@
 
 					<div class="designColor">
 						<div class="menuTitle designColor" @click="setVisibleTrue">
-							<input id="inputDesigncolor" type="checkbox" class="checkbox designColor" @click="setVisibleTrue" hidden>
 							<span>
-								<label for="inputDesigncolor">design color
+								<label class="dummy designColor">design color</label>
 							</span>
-							<label for="inputDesigncolor">+</span>
+							<span>
+								<label class="dummy designColor">+</label>
+							</span>
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.designColor} ]">
 							<ul>
@@ -388,11 +385,12 @@
 
 					<div class="waveCurl">
 						<div class="menuTitle waveCurl" @click="setVisibleTrue">
-							<input id="inputWaveCurl" type="checkbox" class="checkbox waveCurl" @click="setVisibleTrue" hidden>
 							<span>
-								<label for="inputWaveCurl">wave & curl
+								<label class="dummy waveCurl">wave & curl</label>
 							</span>
-							<label for="inputWaveCurl">+</span>
+							<span>
+								<label class="dummy waveCurl">+</label>
+							</span>
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.waveCurl} ]">
 							<ul>
@@ -454,11 +452,12 @@
 
 					<div class="superStraight">
 						<div class="menuTitle superStraight" @click="setVisibleTrue">
-							<input id="inputSuperStraight" type="checkbox" class="checkbox superStraight" @click="setVisibleTrue" hidden>
 							<span>
-								<label for="inputSuperStraight">super straight
+								<label class="dummy superStraight">super straight</label>
 							</span>
-							<label for="inputSuperStraight">+</span>
+							<span>
+								<label class="dummy superStraight">+</label>	
+							</span>
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.superStraight} ]">
 							<ul>
@@ -484,11 +483,12 @@
 
 					<div class="headSpa">
 						<div class="menuTitle headSpa" @click="setVisibleTrue">
-							<input id="inputHeadSpa" type="checkbox" class="checkbox headSpa" @click="setVisibleTrue" hidden>
 							<span>
-								<label for="inputHeadSpa">head spa
+								<label class="dummy headSpa">head spa</label>
 							</span>
-							<label for="inputHeadSpa">+</span>
+							<span>
+								<label class="dummy headSpa">+</label>
+							</span>
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.headSpa} ]">
 							<ul>
@@ -512,11 +512,12 @@
 					
 					<div class="treatment">
 						<div class="menuTitle treatment" @click="setVisibleTrue">
-							<input id="inputTreatment" type="checkbox" class="checkbox treatment" @click="setVisibleTrue" hidden>
 							<span>
-								<label for="inputTreatment">treatment
+								<label class="dummy treatment">treatment</label>
 							</span>
-							<label for="inputTreatment">+</span>
+							<span>
+								<label class="dummy treatment">+</label>
+							</span>
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.treatment} ]">
 							<ul>
@@ -540,11 +541,12 @@
 					
 					<div class="styling">
 						<div class="menuTitle styling" @click="setVisibleTrue">
-							<input id="inputStyling" type="checkbox" class="checkbox styling" @click="setVisibleTrue" hidden>
 							<span>
-								<label for="inputStyling">styling
+								<label class="dummy styling">styling</label>
 							</span>
-							<label for="inputStyling">+</span>
+							<span>
+								<label class="dummy styling">+</label>
+							</span>
 						</div>
 						<div :class="['dataArea' , {visible: isVisible.styling} ]">
 							<ul>

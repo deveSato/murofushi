@@ -1,8 +1,9 @@
 $main-color: #333
 $sub-color: #f0f0f0
-$main-font: 'Roboto', sans-serif, 'Hiragino Kaku Gothic Pro', 'メイリオ',　Meiryo, 'M PLUS 1p'  
+// $main-font: 'Roboto', sans-serif, 'Hiragino Kaku Gothic Pro', 'メイリオ',　Meiryo, 'M PLUS 1p'  
 //////$main-font: 'Roboto', sans-serif, 'Noto Sans JP', sans-serif
 //////$main-font: "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif
+$main-font: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif
 $img_path: '../img/'
 
 
@@ -23,7 +24,7 @@ html
 	scroll-behavior: smooth
 
 body
-	font: 16px/1.6 //$main-font
+	font: 16px/1.6 $main-font
 	margin: 0
 	color: $main-color
 	background-color: $sub-color
