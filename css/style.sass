@@ -14,7 +14,10 @@ $img_path: '../img/'
 
 
 
-
+.pc
+	display: none
+.sp
+	display: initial
 
 html, body 
 	height: 100%
@@ -193,13 +196,13 @@ iframe
 				content: "~"
 			.price.nyoro:after
 				color: $main-color
-	.moreInfoWrapper
-		display: flex
-		justify-content: flex-end
-		.moreInfo
-			background: #888
-			padding: .5em
-			margin: 0 .5em .5em 0
+.moreInfoWrapper
+	display: flex
+	justify-content: flex-end
+	.moreInfo
+		background: #888
+		padding: .5em
+		margin: 0 .5em .5em 0
 
 .style
 	.moreInfoWrapper
@@ -221,6 +224,7 @@ iframe
 	margin: 0 auto
 	width: 90%
 	align-items: center
+	justify-content: center
 	.tel,
 	.line
 		padding: 1em .5em
