@@ -21,6 +21,14 @@ section.longSection {
   height: auto;
 }
 
+section.video {
+  height: auto;
+}
+
+section.video .videoWrapper {
+  margin: 0;
+}
+
 .info .infoWrapper {
   width: 100%;
   margin: 0 auto;
