@@ -1,6 +1,9 @@
 html, body 
 	// background: gray//test用
 
+h1,h2,h3,h4,h5,h6
+	text-align: center
+
 .sp
 	display: none
 .pc
@@ -23,6 +26,8 @@ section
 			
 
 .info
+	.w90c
+	    width: 60%
 	.infoWrapper
 		width: 100%
 		margin: 0 auto
@@ -84,11 +89,12 @@ section
 		width: 50%
 
 .stylistWrapper
-	display: flex
+	display: block
 	padding: 0 4em
 	.leftdiv
 		display: block
-		width: 200em
+		width: 55%
+		margin: 0 auto
 		.name 
 			display: block
 			.alpha
@@ -126,3 +132,36 @@ section
 		.copyright
 			margin: 0 0 0 1em
 			line-height: .3em
+
+#styleTable
+	.styleTable
+		justify-content: flex-start
+		.styleTableItem
+			width: 19.2%
+			&:nth-of-type(n)
+				margin: .9em 1% 0 0 
+			&:nth-of-type(5n)
+				margin: .9em 0 0 0
+			&:nth-of-type(5n+1)
+				margin: .9em 1% 0 0
+	.styleTableSection
+		height: auto
+		margin-bottom: 35em
+		padding: 0em 10em
+
+
+#styleDetail
+	.flexWrapper
+		display: flex
+	.styleDetailSection
+		min-height: 100vh
+		width: 50em
+		margin: 0 auto
+		.picWrapper
+			width: 80%
+		.dataWrapper
+			padding: 0 2em
+			.dataArea
+				padding: 0 2em
+
+

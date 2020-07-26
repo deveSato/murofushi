@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
 .sp {
   display: none;
 }
@@ -27,6 +31,10 @@ section.video {
 
 section.video .videoWrapper {
   margin: 0;
+}
+
+.info .w90c {
+  width: 60%;
 }
 
 .info .infoWrapper {
@@ -125,15 +133,14 @@ section.video .videoWrapper {
 }
 
 .stylistWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding: 0 4em;
 }
 
 .stylistWrapper .leftdiv {
   display: block;
-  width: 200em;
+  width: 55%;
+  margin: 0 auto;
 }
 
 .stylistWrapper .leftdiv .name {
@@ -193,5 +200,57 @@ section.video .videoWrapper {
 .footer .infoWrapper .copyright {
   margin: 0 0 0 1em;
   line-height: .3em;
+}
+
+#styleTable .styleTable {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#styleTable .styleTable .styleTableItem {
+  width: 19.2%;
+}
+
+#styleTable .styleTable .styleTableItem:nth-of-type(n) {
+  margin: .9em 1% 0 0;
+}
+
+#styleTable .styleTable .styleTableItem:nth-of-type(5n) {
+  margin: .9em 0 0 0;
+}
+
+#styleTable .styleTable .styleTableItem:nth-of-type(5n+1) {
+  margin: .9em 1% 0 0;
+}
+
+#styleTable .styleTableSection {
+  height: auto;
+  margin-bottom: 35em;
+  padding: 0em 10em;
+}
+
+#styleDetail .flexWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#styleDetail .styleDetailSection {
+  min-height: 100vh;
+  width: 50em;
+  margin: 0 auto;
+}
+
+#styleDetail .styleDetailSection .picWrapper {
+  width: 80%;
+}
+
+#styleDetail .styleDetailSection .dataWrapper {
+  padding: 0 2em;
+}
+
+#styleDetail .styleDetailSection .dataWrapper .dataArea {
+  padding: 0 2em;
 }
 /*# sourceMappingURL=style_pc.css.map */
